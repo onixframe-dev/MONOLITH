@@ -1,0 +1,8 @@
+{
+  "name": "MONOLITH — студия интерьера",
+  "short_name": "MONOLITH",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }],
+  "theme_color": "#111311",
+  "background_color": "#111311",
+  "display": "standalone"
+}

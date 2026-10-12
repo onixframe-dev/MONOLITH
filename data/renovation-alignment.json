@@ -1,0 +1,117 @@
+[
+  {
+    "image": "01-raw-shell",
+    "source": "wide_interior_view_of_an_empty_unfinished_modern_5.png",
+    "width": 1672,
+    "height": 941,
+    "matches": 37,
+    "inliers": 18,
+    "median_error_pixels": 1.12,
+    "p95_error_pixels": 2.91,
+    "warp_matrix": [
+      [
+        0.99473,
+        0.00396,
+        5.80831
+      ],
+      [
+        -0.00396,
+        0.99473,
+        6.69101
+      ]
+    ],
+    "optimized_bytes": 146628
+  },
+  {
+    "image": "02-finished-shell",
+    "source": "wide_angle_interior_architectural_render_photograp_4.png",
+    "width": 1672,
+    "height": 941,
+    "matches": 54,
+    "inliers": 36,
+    "median_error_pixels": 1.13,
+    "p95_error_pixels": 2.12,
+    "warp_matrix": [
+      [
+        0.99815,
+        -0.00109,
+        4.50306
+      ],
+      [
+        0.00109,
+        0.99815,
+        0.70404
+      ]
+    ],
+    "optimized_bytes": 87958
+  },
+  {
+    "image": "03-lighting",
+    "source": "wide_empty_modern_open_plan_living_space_living_3.png",
+    "width": 1672,
+    "height": 941,
+    "matches": 77,
+    "inliers": 63,
+    "median_error_pixels": 0.82,
+    "p95_error_pixels": 1.63,
+    "warp_matrix": [
+      [
+        0.99815,
+        0.00083,
+        3.30491
+      ],
+      [
+        -0.00083,
+        0.99815,
+        1.73022
+      ]
+    ],
+    "optimized_bytes": 98244
+  },
+  {
+    "image": "04-kitchen",
+    "source": "wide_photorealistic_interior_scene_of_a_modern_mi_2.png",
+    "width": 1672,
+    "height": 941,
+    "matches": 295,
+    "inliers": 268,
+    "median_error_pixels": 0.75,
+    "p95_error_pixels": 2.19,
+    "warp_matrix": [
+      [
+        0.99963,
+        -0.00034,
+        1.19913
+      ],
+      [
+        0.00034,
+        0.99963,
+        -0.23626
+      ]
+    ],
+    "optimized_bytes": 137322
+  },
+  {
+    "image": "05-finished-interior",
+    "source": "wide_photorealistic_interior_scene_of_a_modern_m_1.png",
+    "width": 1672,
+    "height": 941,
+    "matches": null,
+    "inliers": null,
+    "median_error_pixels": 0,
+    "p95_error_pixels": 0,
+    "warp_matrix": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "optimized_bytes": 240098
+  }
+]

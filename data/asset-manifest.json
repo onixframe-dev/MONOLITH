@@ -1,0 +1,431 @@
+[
+  {
+    "project": "apartment-01",
+    "role": "cover",
+    "alt": "Кухня-гостиная с вечерним освещением",
+    "origin": "AI-generated during earlier user conversation",
+    "master": {
+      "path": "public/images/projects/apartment-01/cover.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 287156
+    },
+    "card": {
+      "path": "public/images/projects/apartment-01/cover-card.webp",
+      "width": 850,
+      "height": 560,
+      "bytes": 74366
+    },
+    "mobile": {
+      "path": "public/images/projects/apartment-01/cover-mobile.webp",
+      "width": 700,
+      "height": 820,
+      "bytes": 78408
+    }
+  },
+  {
+    "project": "apartment-01",
+    "role": "living",
+    "alt": "Зона отдыха и гостиная",
+    "origin": "AI-generated during earlier user conversation",
+    "master": {
+      "path": "public/images/projects/apartment-01/living.webp",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 321300
+    },
+    "card": {
+      "path": "public/images/projects/apartment-01/living-card.webp",
+      "width": 850,
+      "height": 560,
+      "bytes": 84716
+    },
+    "mobile": {
+      "path": "public/images/projects/apartment-01/living-mobile.webp",
+      "width": 700,
+      "height": 820,
+      "bytes": 88806
+    }
+  },
+  {
+    "project": "apartment-01",
+    "role": "living-angle",
+    "alt": "Гостиная, альтернативный ракурс",
+    "origin": "AI-generated during earlier user conversation",
+    "master": {
+      "path": "public/images/projects/apartment-01/living-angle.webp",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 304108
+    },
+    "card": {
+      "path": "public/images/projects/apartment-01/living-angle-card.webp",
+      "width": 850,
+      "height": 560,
+      "bytes": 84044
+    },
+    "mobile": {
+      "path": "public/images/projects/apartment-01/living-angle-mobile.webp",
+      "width": 700,
+      "height": 820,
+      "bytes": 83946
+    }
+  },
+  {
+    "project": "apartment-01",
+    "role": "kitchen",
+    "alt": "Кухонная зона",
+    "origin": "AI-generated during earlier user conversation",
+    "master": {
+      "path": "public/images/projects/apartment-01/kitchen.webp",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 202420
+    },
+    "card": {
+      "path": "public/images/projects/apartment-01/kitchen-card.webp",
+      "width": 850,
+      "height": 560,
+      "bytes": 57662
+    },
+    "mobile": {
+      "path": "public/images/projects/apartment-01/kitchen-mobile.webp",
+      "width": 700,
+      "height": 820,
+      "bytes": 52676
+    }
+  },
+  {
+    "project": "apartment-01",
+    "role": "bedroom",
+    "alt": "Спальня",
+    "origin": "AI-generated during earlier user conversation",
+    "master": {
+      "path": "public/images/projects/apartment-01/bedroom.webp",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 278392
+    },
+    "card": {
+      "path": "public/images/projects/apartment-01/bedroom-card.webp",
+      "width": 850,
+      "height": 560,
+      "bytes": 72300
+    },
+    "mobile": {
+      "path": "public/images/projects/apartment-01/bedroom-mobile.webp",
+      "width": 700,
+      "height": 820,
+      "bytes": 76502
+    }
+  },
+  {
+    "project": "apartment-01",
+    "role": "bathroom",
+    "alt": "Санузел",
+    "origin": "AI-generated during earlier user conversation",
+    "master": {
+      "path": "public/images/projects/apartment-01/bathroom.webp",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 262110
+    },
+    "card": {
+      "path": "public/images/projects/apartment-01/bathroom-card.webp",
+      "width": 850,
+      "height": 560,
+      "bytes": 57368
+    },
+    "mobile": {
+      "path": "public/images/projects/apartment-01/bathroom-mobile.webp",
+      "width": 700,
+      "height": 820,
+      "bytes": 59754
+    }
+  },
+  {
+    "project": "apartment-01",
+    "role": "hallway",
+    "alt": "Прихожая",
+    "origin": "AI-generated during earlier user conversation",
+    "master": {
+      "path": "public/images/projects/apartment-01/hallway.webp",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 195118
+    },
+    "card": {
+      "path": "public/images/projects/apartment-01/hallway-card.webp",
+      "width": 850,
+      "height": 560,
+      "bytes": 46672
+    },
+    "mobile": {
+      "path": "public/images/projects/apartment-01/hallway-mobile.webp",
+      "width": 700,
+      "height": 820,
+      "bytes": 52806
+    }
+  },
+  {
+    "project": "apartment-01",
+    "role": "detail-crop",
+    "alt": "Фрагмент основной фотографии, не отдельная фотосъёмка",
+    "origin": "crop of cover",
+    "master": {
+      "path": "public/images/projects/apartment-01/detail-crop.webp",
+      "width": 1003,
+      "height": 489,
+      "bytes": 93630
+    }
+  },
+  {
+    "project": "apartment-02",
+    "role": "cover",
+    "alt": "Светлая кухня-гостиная",
+    "origin": "AI-generated during earlier user conversation",
+    "master": {
+      "path": "public/images/projects/apartment-02/cover.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 234478
+    },
+    "card": {
+      "path": "public/images/projects/apartment-02/cover-card.webp",
+      "width": 850,
+      "height": 560,
+      "bytes": 59708
+    },
+    "mobile": {
+      "path": "public/images/projects/apartment-02/cover-mobile.webp",
+      "width": 700,
+      "height": 820,
+      "bytes": 60908
+    }
+  },
+  {
+    "project": "apartment-02",
+    "role": "living",
+    "alt": "Гостиная и обеденная зона",
+    "origin": "AI-generated during earlier user conversation",
+    "master": {
+      "path": "public/images/projects/apartment-02/living.webp",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 325910
+    },
+    "card": {
+      "path": "public/images/projects/apartment-02/living-card.webp",
+      "width": 850,
+      "height": 560,
+      "bytes": 83752
+    },
+    "mobile": {
+      "path": "public/images/projects/apartment-02/living-mobile.webp",
+      "width": 700,
+      "height": 820,
+      "bytes": 91130
+    }
+  },
+  {
+    "project": "apartment-02",
+    "role": "bedroom",
+    "alt": "Светлая спальня",
+    "origin": "AI-generated during earlier user conversation",
+    "master": {
+      "path": "public/images/projects/apartment-02/bedroom.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 257490
+    },
+    "card": {
+      "path": "public/images/projects/apartment-02/bedroom-card.webp",
+      "width": 850,
+      "height": 560,
+      "bytes": 62926
+    },
+    "mobile": {
+      "path": "public/images/projects/apartment-02/bedroom-mobile.webp",
+      "width": 700,
+      "height": 820,
+      "bytes": 61528
+    }
+  },
+  {
+    "project": "apartment-02",
+    "role": "detail-crop",
+    "alt": "Фрагмент основной фотографии, не отдельная фотосъёмка",
+    "origin": "crop of cover",
+    "master": {
+      "path": "public/images/projects/apartment-02/detail-crop.webp",
+      "width": 1003,
+      "height": 489,
+      "bytes": 67586
+    }
+  },
+  {
+    "project": "apartment-03",
+    "role": "cover",
+    "alt": "Гостиная в графитовой гамме",
+    "origin": "AI-generated during earlier user conversation",
+    "master": {
+      "path": "public/images/projects/apartment-03/cover.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 230954
+    },
+    "card": {
+      "path": "public/images/projects/apartment-03/cover-card.webp",
+      "width": 850,
+      "height": 560,
+      "bytes": 60430
+    },
+    "mobile": {
+      "path": "public/images/projects/apartment-03/cover-mobile.webp",
+      "width": 700,
+      "height": 820,
+      "bytes": 57302
+    }
+  },
+  {
+    "project": "apartment-03",
+    "role": "bedroom",
+    "alt": "Спальня в тёмных оттенках",
+    "origin": "AI-generated during earlier user conversation",
+    "master": {
+      "path": "public/images/projects/apartment-03/bedroom.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 238012
+    },
+    "card": {
+      "path": "public/images/projects/apartment-03/bedroom-card.webp",
+      "width": 850,
+      "height": 560,
+      "bytes": 58760
+    },
+    "mobile": {
+      "path": "public/images/projects/apartment-03/bedroom-mobile.webp",
+      "width": 700,
+      "height": 820,
+      "bytes": 54454
+    }
+  },
+  {
+    "project": "apartment-03",
+    "role": "bathroom",
+    "alt": "Тёмный санузел",
+    "origin": "AI-generated during earlier user conversation",
+    "master": {
+      "path": "public/images/projects/apartment-03/bathroom.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 226246
+    },
+    "card": {
+      "path": "public/images/projects/apartment-03/bathroom-card.webp",
+      "width": 850,
+      "height": 560,
+      "bytes": 50644
+    },
+    "mobile": {
+      "path": "public/images/projects/apartment-03/bathroom-mobile.webp",
+      "width": 700,
+      "height": 820,
+      "bytes": 56742
+    }
+  },
+  {
+    "project": "apartment-03",
+    "role": "detail-crop",
+    "alt": "Фрагмент основной фотографии, не отдельная фотосъёмка",
+    "origin": "crop of cover",
+    "master": {
+      "path": "public/images/projects/apartment-03/detail-crop.webp",
+      "width": 1003,
+      "height": 489,
+      "bytes": 83538
+    }
+  },
+  {
+    "project": null,
+    "role": "site-section",
+    "alt": "hero/hero-city-evening.webp",
+    "origin": "reused AI-generated image from earlier user conversation",
+    "master": {
+      "path": "public/images/hero/hero-city-evening.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 219164
+    }
+  },
+  {
+    "project": null,
+    "role": "site-section",
+    "alt": "hero/hero-bright.webp",
+    "origin": "reused AI-generated image from earlier user conversation",
+    "master": {
+      "path": "public/images/hero/hero-bright.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 176252
+    }
+  },
+  {
+    "project": null,
+    "role": "site-section",
+    "alt": "sections/consultation-background.webp",
+    "origin": "reused AI-generated image from earlier user conversation",
+    "master": {
+      "path": "public/images/sections/consultation-background.webp",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 144320
+    }
+  },
+  {
+    "project": null,
+    "role": "site-section",
+    "alt": "sections/interior-materials.webp",
+    "origin": "reused AI-generated image from earlier user conversation",
+    "master": {
+      "path": "public/images/sections/interior-materials.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 114906
+    }
+  },
+  {
+    "project": null,
+    "role": "site-section",
+    "alt": "sections/portfolio-intro.webp",
+    "origin": "reused AI-generated image from earlier user conversation",
+    "master": {
+      "path": "public/images/sections/portfolio-intro.webp",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 255610
+    }
+  },
+  {
+    "project": "apartment-03",
+    "role": "bathroom-angle",
+    "origin": "AI-generated image from previous conversation",
+    "master": {
+      "path": "public/images/projects/apartment-03/bathroom-angle.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 258636
+    },
+    "card": {
+      "path": "public/images/projects/apartment-03/bathroom-angle-card.webp",
+      "width": 850,
+      "height": 560
+    },
+    "mobile": {
+      "path": "public/images/projects/apartment-03/bathroom-angle-mobile.webp",
+      "width": 700,
+      "height": 820
+    }
+  }
+]
