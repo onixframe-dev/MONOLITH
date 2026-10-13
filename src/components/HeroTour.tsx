@@ -23,12 +23,14 @@ export function HeroTour() {
   const ctaRef = useRef<HTMLDivElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
   const progressValueRef = useRef(0);
+  const iPhoneStageRef = useRef(-1);
   const syncRef = useRef<((progress: number) => void) | null>(null);
   const preloadedRef = useRef(new Set([0, 1]));
   const decodedRef = useRef(new Set<number>());
   const [preloaded, setPreloaded] = useState<number[]>([0, 1]);
   const [active, setActive] = useState(0);
   const [reduced, setReduced] = useState(false);
+  const [iPhoneTour, setIPhoneTour] = useState(false);
 
   const ready = useCallback((index: number) => {
     decodedRef.current.add(index);
@@ -37,20 +39,23 @@ export function HeroTour() {
 
   useEffect(() => {
     const media = window.matchMedia('(prefers-reduced-motion: reduce)');
-    // iPhone Safari can still stutter while compositing large sticky image layers.
-    // Keep the full scroll tour on every other device and show one stable final frame on iPhone.
+    // iPhone receives a step-based crossfade: same story, no per-pixel layer compositing.
     const isIPhone = /iPhone|iPod/.test(window.navigator.userAgent);
-    const usesStaticTour = () => media.matches || isIPhone;
+    const usesStaticTour = () => media.matches;
     let mounted = true;
     let context: { revert: () => void } | undefined;
     let scrollTrigger: typeof import('gsap/ScrollTrigger').ScrollTrigger | undefined;
+    setIPhoneTour(isIPhone);
+    if (isIPhone) {
+      preloadedRef.current = new Set(renovationScenes.map((_, index) => index));
+      setPreloaded(renovationScenes.map((_, index) => index));
+    }
     const onMotionChange = () => {
       const staticTour = usesStaticTour();
       setReduced(staticTour);
       if (staticTour) {
-        preloadedRef.current = new Set([0, lastIndex]);
-        setPreloaded([0, lastIndex]);
-        // Do not trap iPhone or reduced-motion visitors in a multi-viewport scroll tour.
+        setPreloaded(renovationScenes.map((_, index) => index));
+        // Do not trap reduced-motion visitors in a multi-viewport scroll tour.
         syncRef.current = null;
         setActive(lastIndex);
       }
@@ -77,6 +82,36 @@ export function HeroTour() {
                 ? ease(range.start, range.end, p)
                 : 0;
             });
+
+            if (isIPhone) {
+              let current = 0;
+              values.forEach((fraction, index) => { if (fraction >= 0.54) current = index + 1; });
+              if (iPhoneStageRef.current !== current) {
+                iPhoneStageRef.current = current;
+                framesRef.current.forEach((layer, index) => {
+                  if (!layer || index === 0) return;
+                  layer.style.opacity = index <= current ? '1' : '0';
+                  layer.style.maskImage = 'none';
+                  layer.style.webkitMaskImage = 'none';
+                });
+                copyRef.current.forEach((node, index) => {
+                  if (!node) return;
+                  node.style.opacity = index === current ? '1' : '0';
+                  node.style.transform = index === current ? 'translate3d(0,0,0)' : 'translate3d(0,12px,0)';
+                  node.style.visibility = 'visible';
+                });
+                if (ctaRef.current) {
+                  const isLast = current === lastIndex;
+                  ctaRef.current.style.opacity = isLast ? '1' : '0';
+                  ctaRef.current.style.visibility = isLast ? 'visible' : 'hidden';
+                  ctaRef.current.style.pointerEvents = isLast ? 'auto' : 'none';
+                  ctaRef.current.style.transform = 'translate3d(0,0,0)';
+                }
+                if (progressRef.current) progressRef.current.style.transform = `scaleX(${current / lastIndex})`;
+                setActive(current);
+              }
+              return;
+            }
 
             framesRef.current.forEach((layer, index) => {
               if (!layer || index === 0) return;
@@ -161,7 +196,7 @@ export function HeroTour() {
   };
 
   return (
-    <section ref={sectionRef} className={`renov-hero ${reduced ? 'renov-hero--reduced' : ''}`} id="top" aria-label="Как MONOLITH превращает пустую квартиру в интерьер">
+    <section ref={sectionRef} className={`renov-hero ${reduced ? 'renov-hero--reduced' : ''} ${iPhoneTour ? 'renov-hero--iphone-tour' : ''}`} id="top" aria-label="Как MONOLITH превращает пустую квартиру в интерьер">
       <div className="renov-sticky">
         <div ref={sceneRef} className="renov-scene-stack" aria-hidden="true">
           {renovationScenes.map((scene, index) => (
