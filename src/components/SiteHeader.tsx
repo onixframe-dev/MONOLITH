@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { mainNavigation } from '@/lib/site';
+import { SiteNavLinks } from '@/components/navigation/SiteNavLinks';
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -34,7 +34,7 @@ export function SiteHeader() {
         <span className="brand-lockup"><b>MONOLITH</b><small>СТУДИЯ ИНТЕРЬЕРА</small></span>
       </Link>
       <nav className={`header-links ${open ? 'header-links--open' : ''}`} aria-label="Основная навигация">
-        {mainNavigation.map(link => <Link key={link.href} href={link.href} onClick={() => setOpen(false)} className={pathname === link.href ? 'is-active' : ''}>{link.label}</Link>)}
+        <SiteNavLinks activePath={pathname} onNavigate={() => setOpen(false)} />
         <Link href="/kontakty#contact-form" className="mobile-only nav-mobile-cta" onClick={() => setOpen(false)}>Обсудить проект <ArrowRight size={15} /></Link>
       </nav>
       <div className="header-actions">

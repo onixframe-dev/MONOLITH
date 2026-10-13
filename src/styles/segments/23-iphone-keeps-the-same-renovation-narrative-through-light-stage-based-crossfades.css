@@ -1,0 +1,2 @@
+/* iPhone keeps the same renovation narrative through light, stage-based crossfades. */
+.renov-hero--iphone-tour .renov-frame{will-change:opacity;transition:opacity .46s cubic-bezier(.22,.8,.24,1)}.renov-hero--iphone-tour .renov-copy{transition:opacity .38s ease,transform .46s cubic-bezier(.16,1,.3,1)}.renov-hero--iphone-tour .renov-cta{transition:opacity .32s ease,transform .38s cubic-bezier(.16,1,.3,1)}

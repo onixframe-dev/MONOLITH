@@ -1,0 +1,2 @@
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.18,.67,.2,1)}.reveal.is-visible{opacity:1;transform:none}
