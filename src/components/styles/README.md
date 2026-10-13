@@ -10,4 +10,4 @@
 - `12`, `16` — responsive and mobile navigation rules.
 - `14`–`23` — motion and later polish layers.
 
-Keep new styles in a domain-specific segment and add it to `index.css` after its base styles. This preserves the intentional cascade without returning to one large stylesheet.
+Keep new styles in a domain-specific segment beside the components and add it to `index.css` after its base styles. This preserves the intentional cascade without returning to one large stylesheet.

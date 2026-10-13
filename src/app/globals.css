@@ -1,2 +1,2 @@
-/* Global entry point. Styles are ordered by domain in src/styles/segments. */
-@import '../styles/index.css';
+/* Global entry point. Styles live beside reusable components. */
+@import '../components/styles/index.css';
