@@ -37,18 +37,20 @@ export function HeroTour() {
 
   useEffect(() => {
     const media = window.matchMedia('(prefers-reduced-motion: reduce)');
-    // iPhone Safari can drop a composited sticky layer while its browser chrome
-    // changes the visual viewport. Keep the desktop/Android masked reveal intact,
-    // but use an opacity-only crossfade on iPhone.
+    // iPhone Safari can still stutter while compositing large sticky image layers.
+    // Keep the full scroll tour on every other device and show one stable final frame on iPhone.
     const isIPhone = /iPhone|iPod/.test(window.navigator.userAgent);
+    const usesStaticTour = () => media.matches || isIPhone;
     let mounted = true;
     let context: { revert: () => void } | undefined;
     let scrollTrigger: typeof import('gsap/ScrollTrigger').ScrollTrigger | undefined;
     const onMotionChange = () => {
-      setReduced(media.matches);
-      if (media.matches) {
-        setPreloaded(renovationScenes.map((_, index) => index));
-        // Do not trap reduced-motion visitors in a multi-viewport scroll tour.
+      const staticTour = usesStaticTour();
+      setReduced(staticTour);
+      if (staticTour) {
+        preloadedRef.current = new Set([0, lastIndex]);
+        setPreloaded([0, lastIndex]);
+        // Do not trap iPhone or reduced-motion visitors in a multi-viewport scroll tour.
         syncRef.current = null;
         setActive(lastIndex);
       }
@@ -56,7 +58,7 @@ export function HeroTour() {
     onMotionChange();
     media.addEventListener('change', onMotionChange);
 
-    if (!media.matches) {
+    if (!usesStaticTour()) {
       void (async () => {
         const [{ default: gsap }, { ScrollTrigger }] = await Promise.all([
           import('gsap'), import('gsap/ScrollTrigger'),
@@ -79,12 +81,6 @@ export function HeroTour() {
             framesRef.current.forEach((layer, index) => {
               if (!layer || index === 0) return;
               const fraction = values[index - 1];
-              if (isIPhone) {
-                layer.style.opacity = String(fraction);
-                layer.style.maskImage = 'none';
-                layer.style.webkitMaskImage = 'none';
-                return;
-              }
               if (fraction <= 0) {
                 layer.style.opacity = '0';
                 layer.style.maskImage = 'linear-gradient(90deg,transparent,transparent)';
@@ -147,15 +143,11 @@ export function HeroTour() {
 
     const refresh = () => scrollTrigger?.refresh();
     window.addEventListener('resize', refresh, { passive: true });
-    // Address-bar expansion/collapse on iPhone changes the usable height without
-    // reliably emitting window.resize, which otherwise shifts the pinned range.
-    if (isIPhone) window.visualViewport?.addEventListener('resize', refresh, { passive: true });
     return () => {
       mounted = false;
       syncRef.current = null;
       context?.revert();
       window.removeEventListener('resize', refresh);
-      if (isIPhone) window.visualViewport?.removeEventListener('resize', refresh);
       media.removeEventListener('change', onMotionChange);
     };
   }, []);
