@@ -35,7 +35,7 @@ async function generate() {
   const entries = {};
 
   for (const file of files) {
-        const relPath = '/' + path.relative(PATH_PUBLIC, file).replace(/\\/g, '/');
+    const relPath = '/' + path.relative(PATH_PUBLIC, file).replace(/\\/g, '/');
     const buffer = await sharp(file)
       .resize(20, 20, { fit: 'inside' })
       .webp({ quality: 20 })

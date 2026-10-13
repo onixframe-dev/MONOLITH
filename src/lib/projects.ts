@@ -2,26 +2,123 @@ import type { Project } from '@/types/content';
 const img = (n: string, name: string) => `/images/projects/apartment-0${n}/${name}.webp`;
 const card = (n: string, name: string) => `/images/projects/apartment-0${n}/${name}-card.webp`;
 const mobile = (n: string, name: string) => `/images/projects/apartment-0${n}/${name}-mobile.webp`;
-const media = (n: string, room: string, alt: string) => ({src: img(n,room),cardSrc:img(n,`${room}-card`),mobileSrc:img(n,`${room}-mobile`),room,alt});
+const media = (n: string, room: string, alt: string) => ({
+  src: img(n, room),
+  cardSrc: img(n, `${room}-card`),
+  mobileSrc: img(n, `${room}-mobile`),
+  room,
+  alt,
+});
 export const projects: Project[] = [
   {
-    id:'apartment-01',slug:'city-evening',title:'CITY EVENING',subtitle:'Тепло городского вечера',category:'Современный',style:'Тёплый минимализм',status:'PUBLISHED',isConcept:true,sortOrder:1,
-    description:'Тёплая палитра дерева, спокойный текстиль и мягкий свет. Концепция квартиры, в которой современная архитектура встречается с домашним уютом.',cover:img('1','cover'),coverCard:card('1','cover'),coverMobile:mobile('1','cover'),
-    gallery:[media('1','cover','Кухня-гостиная в вечернем свете'),media('1','hallway','Прихожая с встроенным хранением'),media('1','living','Гостиная с панорамными окнами'),media('1','kitchen','Кухня с каменным островом'),media('1','bedroom','Спальня с мягким светом'),media('1','bathroom','Санузел с тёплой подсветкой'),media('1','living-angle','Гостиная, второй район')]
+    id: 'apartment-01',
+    slug: 'city-evening',
+    title: 'CITY EVENING',
+    subtitle: 'Тепло городского вечера',
+    category: 'Современный',
+    style: 'Тёплый минимализм',
+    status: 'PUBLISHED',
+    isConcept: true,
+    sortOrder: 1,
+    description:
+      'Тёплая палитра дерева, спокойный текстиль и мягкий свет. Концепция квартиры, в которой современная архитектура встречается с домашним уютом.',
+    cover: img('1', 'cover'),
+    coverCard: card('1', 'cover'),
+    coverMobile: mobile('1', 'cover'),
+    gallery: [
+      media('1', 'cover', 'Кухня-гостиная в вечернем свете'),
+      media('1', 'hallway', 'Прихожая с встроенным хранением'),
+      media('1', 'living', 'Гостиная с панорамными окнами'),
+      media('1', 'kitchen', 'Кухня с каменным островом'),
+      media('1', 'bedroom', 'Спальня с мягким светом'),
+      media('1', 'bathroom', 'Санузел с тёплой подсветкой'),
+      media('1', 'living-angle', 'Гостиная, второй район'),
+    ],
   },
   {
-    id:'apartment-02',slug:'soft-nordic',title:'SOFT NORDIC',subtitle:'Свет и натуральные материалы',category:'Скандинавский',style:'Светлый сканди',status:'PUBLISHED',isConcept:true,sortOrder:2,
-    description:'Пространство без визуального шума: светлая древесина, природные оттенки, воздух и тактильные фактуры.',cover:img('2','cover'),coverCard:card('2','cover'),coverMobile:mobile('2','cover'),
-    gallery:[media('2','cover','Светлая кухня-гостиная'),media('2','living','Мягкая гостиная'),media('2','bedroom','Светлая спальня')]
+    id: 'apartment-02',
+    slug: 'soft-nordic',
+    title: 'SOFT NORDIC',
+    subtitle: 'Свет и натуральные материалы',
+    category: 'Скандинавский',
+    style: 'Светлый сканди',
+    status: 'PUBLISHED',
+    isConcept: true,
+    sortOrder: 2,
+    description:
+      'Пространство без визуального шума: светлая древесина, природные оттенки, воздух и тактильные фактуры.',
+    cover: img('2', 'cover'),
+    coverCard: card('2', 'cover'),
+    coverMobile: mobile('2', 'cover'),
+    gallery: [
+      media('2', 'cover', 'Светлая кухня-гостиная'),
+      media('2', 'living', 'Мягкая гостиная'),
+      media('2', 'bedroom', 'Светлая спальня'),
+    ],
   },
   {
-    id:'apartment-03',slug:'night-contrast',title:'NIGHT CONTRAST',subtitle:'Глубина, ритм, характер',category:'Современный',style:'Тёмный минимализм',status:'PUBLISHED',isConcept:true,sortOrder:3,
-    description:'Контраст графитовых поверхностей и тёплого света. Лаконичный интерьер, построенный на пропорциях и материалах.',cover:img('3','cover'),coverCard:card('3','cover'),coverMobile:mobile('3','cover'),
-    gallery:[media('3','cover','Гостиная с графитовой отделкой'),media('3','bedroom','Спальня в глубоких оттенках'),media('3','bathroom','Санузел с натуральным камнем'),media('3','bathroom-angle','Ванная, дополнительный ракурс')]
+    id: 'apartment-03',
+    slug: 'night-contrast',
+    title: 'NIGHT CONTRAST',
+    subtitle: 'Глубина, ритм, характер',
+    category: 'Современный',
+    style: 'Тёмный минимализм',
+    status: 'PUBLISHED',
+    isConcept: true,
+    sortOrder: 3,
+    description:
+      'Контраст графитовых поверхностей и тёплого света. Лаконичный интерьер, построенный на пропорциях и материалах.',
+    cover: img('3', 'cover'),
+    coverCard: card('3', 'cover'),
+    coverMobile: mobile('3', 'cover'),
+    gallery: [
+      media('3', 'cover', 'Гостиная с графитовой отделкой'),
+      media('3', 'bedroom', 'Спальня в глубоких оттенках'),
+      media('3', 'bathroom', 'Санузел с натуральным камнем'),
+      media('3', 'bathroom-angle', 'Ванная, дополнительный ракурс'),
+    ],
   },
-  {id:'apartment-04',slug:'urban-loft',title:'URBAN LOFT',subtitle:'Мягкий городской лофт',category:'Лофт',style:'Лофт',status:'DRAFT',isConcept:true,sortOrder:4,description:'Проект в подготовке: фото ещё не утверждены.',gallery:[]},
-  {id:'apartment-05',slug:'airy-minimal',title:'AIRY MINIMAL',subtitle:'Минимализм без холодности',category:'Минимализм',style:'Светлый минимализм',status:'DRAFT',isConcept:true,sortOrder:5,description:'Проект в подготовке: фото ещё не утверждены.',gallery:[]},
-  {id:'apartment-06',slug:'modern-classic',title:'MODERN CLASSIC',subtitle:'Вневременное спокойствие',category:'Современная классика',style:'Современная классика',status:'DRAFT',isConcept:true,sortOrder:6,description:'Проект в подготовке: фото ещё не утверждены.',gallery:[]}
+  {
+    id: 'apartment-04',
+    slug: 'urban-loft',
+    title: 'URBAN LOFT',
+    subtitle: 'Мягкий городской лофт',
+    category: 'Лофт',
+    style: 'Лофт',
+    status: 'DRAFT',
+    isConcept: true,
+    sortOrder: 4,
+    description: 'Проект в подготовке: фото ещё не утверждены.',
+    gallery: [],
+  },
+  {
+    id: 'apartment-05',
+    slug: 'airy-minimal',
+    title: 'AIRY MINIMAL',
+    subtitle: 'Минимализм без холодности',
+    category: 'Минимализм',
+    style: 'Светлый минимализм',
+    status: 'DRAFT',
+    isConcept: true,
+    sortOrder: 5,
+    description: 'Проект в подготовке: фото ещё не утверждены.',
+    gallery: [],
+  },
+  {
+    id: 'apartment-06',
+    slug: 'modern-classic',
+    title: 'MODERN CLASSIC',
+    subtitle: 'Вневременное спокойствие',
+    category: 'Современная классика',
+    style: 'Современная классика',
+    status: 'DRAFT',
+    isConcept: true,
+    sortOrder: 6,
+    description: 'Проект в подготовке: фото ещё не утверждены.',
+    gallery: [],
+  },
 ];
-export const publishedProjects = projects.filter((project) => project.status === 'PUBLISHED' && project.cover);
-export const getPublishedProject = (slug:string) => publishedProjects.find((p)=>p.slug === slug);
+export const publishedProjects = projects.filter(
+  (project) => project.status === 'PUBLISHED' && project.cover,
+);
+export const getPublishedProject = (slug: string) => publishedProjects.find((p) => p.slug === slug);

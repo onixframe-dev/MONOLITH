@@ -1,3 +1,21 @@
 /* Mobile navigation remains a full overlay and respects device cut-outs. */
-@media(max-width:960px){.site-header{padding-top:env(safe-area-inset-top);height:calc(74px + env(safe-area-inset-top))}.header-links{top:calc(74px + env(safe-area-inset-top));min-height:calc(100dvh - 74px - env(safe-area-inset-top));padding-bottom:max(35px,env(safe-area-inset-bottom))}}
-@media(max-width:700px){.site-header{height:calc(68px + env(safe-area-inset-top))}.header-links{top:calc(68px + env(safe-area-inset-top));min-height:calc(100dvh - 68px - env(safe-area-inset-top))}}
+@media (max-width: 960px) {
+  .site-header {
+    padding-top: env(safe-area-inset-top);
+    height: calc(74px + env(safe-area-inset-top));
+  }
+  .header-links {
+    top: calc(74px + env(safe-area-inset-top));
+    min-height: calc(100dvh - 74px - env(safe-area-inset-top));
+    padding-bottom: max(35px, env(safe-area-inset-bottom));
+  }
+}
+@media (max-width: 700px) {
+  .site-header {
+    height: calc(68px + env(safe-area-inset-top));
+  }
+  .header-links {
+    top: calc(68px + env(safe-area-inset-top));
+    min-height: calc(100dvh - 68px - env(safe-area-inset-top));
+  }
+}

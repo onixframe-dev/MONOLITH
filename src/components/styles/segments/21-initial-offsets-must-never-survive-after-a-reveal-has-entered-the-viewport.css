@@ -1,2 +1,7 @@
 /* Initial offsets must never survive after a Reveal has entered the viewport. */
-.reveal.reveal-ready[data-motion=line].is-visible,.reveal.reveal-ready[data-motion=stagger].is-visible,.reveal.reveal-ready[data-motion=form].is-visible,.project-reveal.reveal-ready.is-visible{transform:none}
+.reveal.reveal-ready[data-motion='line'].is-visible,
+.reveal.reveal-ready[data-motion='stagger'].is-visible,
+.reveal.reveal-ready[data-motion='form'].is-visible,
+.project-reveal.reveal-ready.is-visible {
+  transform: none;
+}

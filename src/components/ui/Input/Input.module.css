@@ -1,0 +1,64 @@
+/* Input — form field styles matching the original MONOLITH form CSS. */
+
+.field {
+  font-size: 11px;
+  color: #4d4d48;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-weight: 600;
+}
+
+.field > .optional {
+  font-weight: 400;
+  color: #898980;
+}
+
+.field input {
+  width: 100%;
+  min-height: 52px;
+  border: 1px solid #c8c4ba;
+  background: #f3f0ea;
+  padding: 15px 16px;
+  color: #262720;
+  border-radius: 2px;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+  font-size: 15px;
+  font-family: var(--body);
+}
+
+.field input:focus {
+  border-color: #936f54;
+  background: #fff;
+}
+
+.field input:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(217, 185, 151, 0.16);
+}
+
+.field input.error {
+  border-color: #b94a4a;
+}
+
+.errorMessage {
+  font-size: 10px;
+  color: #b94a4a;
+  line-height: 1.4;
+}
+
+/* Full-width variant for wide textareas (matches .form-field-wide) */
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .field input,
+  .field input:focus {
+    transition: none !important;
+  }
+}

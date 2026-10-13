@@ -1,0 +1,154 @@
+/* Gallery — lightbox and thumbnail gallery styles extracted from global segment 08-project-detail-gallery.
+   Responsive overrides from segments 12-responsiveness included below.
+   Base global classes (.gallery, .gallery-featured, etc.) remain in global CSS for backward compatibility. */
+
+.gallery-featured {
+  height: min(64vw, 710px);
+  min-height: 350px;
+  position: relative;
+  background: #292a25;
+}
+
+.gallery-featured > img {
+  object-fit: cover;
+}
+
+.gallery-controls {
+  position: absolute;
+  bottom: 25px;
+  left: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-shadow: 0 2px 6px #000;
+}
+
+.gallery-controls > div {
+  display: flex;
+  gap: 8px;
+}
+
+.gallery-controls button,
+.lightbox-bottom button {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background: rgba(15, 16, 14, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: grid;
+  place-items: center;
+  transition: background 0.2s;
+}
+
+.gallery-controls button:hover {
+  background: var(--accent);
+  color: #111;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(6, 7, 6, 0.96);
+  display: grid;
+  place-items: center;
+  padding: 50px;
+}
+
+.lightbox-image {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 150px);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 17px;
+  right: 24px;
+  font-size: 28px;
+  z-index: 2;
+}
+
+.lightbox-bottom {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-bottom button {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background: rgba(15, 16, 14, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: grid;
+  place-items: center;
+  transition: background 0.2s;
+}
+
+.gallery-thumbs {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 9px;
+  margin-top: 11px;
+}
+
+.gallery-thumb {
+  height: 100px;
+  position: relative;
+  opacity: 0.65;
+  border: 2px solid transparent;
+  transition:
+    opacity 0.2s,
+    border 0.2s;
+}
+
+.gallery-thumb img {
+  object-fit: cover;
+}
+
+.gallery-thumb:hover {
+  opacity: 1;
+  border-color: var(--accent);
+}
+
+.isSelected {
+  opacity: 1;
+  border-color: var(--accent);
+}
+
+.lightbox-bottom span {
+  font-size: 12px;
+  color: #b9b9b3;
+  letter-spacing: 0.12em;
+  text-shadow: 0 1px 3px #000;
+}
+
+/* Responsive overrides (from segment 12-responsiveness) */
+@media (max-width: 950px) {
+  .gallery-thumbs {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .gallery-thumbs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery-featured {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery-controls {
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+  }
+}

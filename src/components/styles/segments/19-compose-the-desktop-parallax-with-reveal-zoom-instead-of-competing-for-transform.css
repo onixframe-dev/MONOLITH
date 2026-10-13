@@ -1,2 +1,15 @@
 /* Compose the desktop parallax with reveal zoom instead of competing for transform. */
-.editorial-img img,.cal-image img{--parallax-y:0px;--image-scale:1.035;transform:translate3d(0,var(--parallax-y),0) scale(var(--image-scale))}.reveal.reveal-ready[data-motion=image] img{--image-scale:1.055;transform:translate3d(0,var(--parallax-y),0) scale(var(--image-scale))}.reveal.reveal-ready[data-motion=image].is-visible img{--image-scale:1;transform:translate3d(0,var(--parallax-y),0) scale(var(--image-scale))}
+.editorial-img img,
+.cal-image img {
+  --parallax-y: 0px;
+  --image-scale: 1.035;
+  transform: translate3d(0, var(--parallax-y), 0) scale(var(--image-scale));
+}
+.reveal.reveal-ready[data-motion='image'] img {
+  --image-scale: 1.055;
+  transform: translate3d(0, var(--parallax-y), 0) scale(var(--image-scale));
+}
+.reveal.reveal-ready[data-motion='image'].is-visible img {
+  --image-scale: 1;
+  transform: translate3d(0, var(--parallax-y), 0) scale(var(--image-scale));
+}

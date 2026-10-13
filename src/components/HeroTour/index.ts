@@ -1,1 +1,0 @@
-export { HeroTour } from './HeroTour';

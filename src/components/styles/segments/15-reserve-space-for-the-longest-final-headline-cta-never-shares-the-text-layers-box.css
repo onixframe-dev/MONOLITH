@@ -1,6 +1,45 @@
 /* Reserve space for the longest final headline. CTA never shares the text layers' box. */
-.renov-left{grid-template-rows:auto minmax(410px,auto) auto}
-.renov-copy-wrap{min-height:410px}
-@media(max-width:700px){.renov-left{grid-template-rows:auto minmax(340px,auto) auto}.renov-copy-wrap{min-height:340px}}
-@media(max-width:390px){.renov-left{grid-template-rows:auto 345px auto}.renov-copy-wrap{min-height:345px}}
-@media(max-height:700px) and (min-width:701px){.renov-content{padding-top:65px;padding-bottom:60px}.renov-brand{margin-bottom:15px}.renov-copy-wrap{min-height:330px}.renov-left{grid-template-rows:auto minmax(330px,auto) auto}.renov-copy h1,.renov-copy h2{font-size:clamp(40px,4.3vw,68px)}.renov-footer{bottom:19px}}
+.renov-left {
+  grid-template-rows: auto minmax(410px, auto) auto;
+}
+.renov-copy-wrap {
+  min-height: 410px;
+}
+@media (max-width: 700px) {
+  .renov-left {
+    grid-template-rows: auto minmax(340px, auto) auto;
+  }
+  .renov-copy-wrap {
+    min-height: 340px;
+  }
+}
+@media (max-width: 390px) {
+  .renov-left {
+    grid-template-rows: auto 345px auto;
+  }
+  .renov-copy-wrap {
+    min-height: 345px;
+  }
+}
+@media (max-height: 700px) and (min-width: 701px) {
+  .renov-content {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
+  .renov-brand {
+    margin-bottom: 15px;
+  }
+  .renov-copy-wrap {
+    min-height: 330px;
+  }
+  .renov-left {
+    grid-template-rows: auto minmax(330px, auto) auto;
+  }
+  .renov-copy h1,
+  .renov-copy h2 {
+    font-size: clamp(40px, 4.3vw, 68px);
+  }
+  .renov-footer {
+    bottom: 19px;
+  }
+}

@@ -1,0 +1,1 @@
+export { HeroRenovation } from './HeroRenovation';

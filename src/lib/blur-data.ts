@@ -2,55 +2,106 @@
 // Run "npm run generate:blur" to regenerate.
 
 export const blurData: Record<string, string> = {
-  "/images/hero/hero-bright.webp": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCsABl7GkUvi2pgAPzvHEUC5uBrC7pZb6nsU4R6/kjdcy2ij+5Do1tiTrRaVmW/SA5noIAAAA==",
-  "/images/hero/hero-city-evening.webp": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACQAwCdASoUAAsAPzmGulOvKKWisAgB4CcJZACsACCPLeDBeTAAAP0qaiFtKJy2/hOS4Ct39z/FuQeQHV47kwY97dZgWX1hKffXErK8Ku3S2Cbtlt4t1pKnpoQIMVGT4sAAAA==",
-  "/images/projects/apartment-01/bathroom-card.webp": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwBACdASoUAA0APzmEuVOvKKWisAgB4CcJZgCdMoGv/gPcp/5/SOHAiyq8K0qAAP4j55aI/+CWMmiS3RfyxeIiXvMprooOhJAJesk8FomKIkTnqMZn2Mzz0Zvjd0BhZaJVg/U+UFy4WDWduAA=",
-  "/images/projects/apartment-01/bathroom-mobile.webp": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACwBACdASoRABQAPzmUwVmvKicjqAgB4CcJQBdnKAANwCDcd0Qz5qysM+ED0TAAAP5z+Y4skMXMmPfBUupYlfh4v9mxk9z31As8NSvDWzsUP2SNl5qUc296ZziIdPsy4XMz11s+W/AR02lCz6LfNEgA",
-  "/images/projects/apartment-01/bathroom.webp": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwBACdASoUAA8APzmEuVOvKKWisAgB4CcJZACdMoMYAEsmXDMT0+2NGAAA/heC9nJwYlMsOROt5nPdDgtmD8hTxExlYhiqvf9MIjzSULxTEfskr3OiE1y/bK5B5B3prEcOtGhOtlgh0TYA3NAAAA==",
-  "/images/projects/apartment-01/bedroom-card.webp": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJZACdMoABoaeZbpN4mAwA/oGQYUeYP6XqB2clxmmB76dnXPAse7hdgRoV5JA3r4NWbUfUOud2hNbPmn3/oM8J5agOIZcwAAA=",
-  "/images/projects/apartment-01/bedroom-mobile.webp": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAwCdASoRABQAPzmMuVavKSUjqA1R4CcJYwDGfA34nDEjlSxtfooAAP0iFZCwcGwocZDXksJCejd6NPxqfymHAJ727MtW061pdgpCVceLGtuRcZMbUqEKO+4AAA==",
-  "/images/projects/apartment-01/bedroom.webp": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwBACdASoUAA8APzmEuVOvKKWisAgB4CcJZACdMoACtaWKDtb+/dItkkAA/oGQW0HDZZsQ+WCrdDm/oK2Ju3DzAZcXLbL4HJT59CFSYUcEeFqkDXyOCGZ0oj7aAyClLKu4ENRkAAA=",
-  "/images/projects/apartment-01/cover-card.webp": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJYl2ARgATjcq3i6YgAP7fts64OZuiHhyJAziTFgHdgz0PqnWDIyCWrbq1fpcZmbtUEv5lshVz8Upjk0sppaoIAAA=",
-  "/images/projects/apartment-01/cover-mobile.webp": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwBACdASoRABQAPzmUwFmvKiajqAgB4CcJYwAAKTv2+MRleEO9HOZEaagw9oAAAP0fppWFemplYtW/aUSuFdO0bYtGH2hoD0bMDvf37ydz7sb3OYTIKGOpPFHzGnxeFfOrUp2TZICfB1y6WeVSBfrpgd3wAAAA",
-  "/images/projects/apartment-01/cover.webp": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZACsACCPLeDBeTAAAP0qaiFtKJy2/hOS4Ct39z/FuQeQHV47kwY97dZgWX1hKffXErK8Ku3S2Cbtlt4t1pKnpoQIMVGT4sAAAA==",
-  "/images/projects/apartment-01/detail-crop.webp": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQBACdASoUAAoAPzmGuVOvKSWisAgB4CcJYgCdMoACAx2VJFuwZ3e4AAD+dH9Ere7fGlSvDmm95kgd/iBPThlzVuPZBxwsgicR5Pt7g7JPHrJsy1u5EALa8QaR9AEkgDupEAAA",
-  "/images/projects/apartment-01/hallway-card.webp": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJagCdMoACEwUpHhj1U6AA/i5SRQbJKnpRnLVALUvUyyks3+AJYQ6oPzTvjb0ScyGMjObEcKUlkLFXQBtPjckXNtFvDLXoAAA=",
-  "/images/projects/apartment-01/hallway-mobile.webp": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwBACdASoRABQAPzmWwlmvKqcjqAgB4CcJQBdgAZdg3Z4FT3Gf/Hp02AAA/josmUb0qeCdqLcx5TAnaZqh0P6tIhBhN2HfZ81ACNQWHUIZETPNyj+O8jsAHCEVqaby/xxUE2AA",
-  "/images/projects/apartment-01/hallway.webp": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoUAA8APzmGuVOvKSWisAgB4CcJZgCdMoR3ABXKZ3DwRKvOAAD+LlNYwtklTm5oYuCLzgcx5VJZkLxoMqa92Uzfllc03mLFKIFiyDNn9CBGrMVMyLu/C/TlAvAAAA==",
-  "/images/projects/apartment-01/kitchen-card.webp": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACwAwCdASoUAA0APzmEuVOvKKWisAgB4CcJZgCdMoACvxgFD2X8QAD+fAGZB+P87l3G75Wcc68zBXIXtff0XPOZs5ZvcWioo8OkLL5RS32ANxYbDM7l97nHrK2exvG8mKw10z00z3V4ZDoA",
-  "/images/projects/apartment-01/kitchen-mobile.webp": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBQCdASoRABQAPzmUwFmvKiajqAgB4CcJZACdMsvGUBNDrnGW089Tt5uR3zX9T8QAAP5IgSnN34Eun0oPoytJCKEqlHNJx/31FquY0cTC09wB8olJEhlRxfTyP3Zu/M2M65r4ym//q3w0poKhM66tQp7SA0TKncAAAA==",
-  "/images/projects/apartment-01/kitchen.webp": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQBACdASoUAA8APzmEuVOvKKWisAgB4CcJaACdMoRwFf/gNnlwv8r+GUiAAP6lMHzVtjiDn8MBp/hypN0IZE9kmzb05bJF2n3xTfmTJ7Hcc3gSu2w3Z2mOs/wg7lAwqt2ItZp11+DZNT2TBQQ4AA==",
-  "/images/projects/apartment-01/living-angle-card.webp": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJZACdMoACrr8jb3HegAAA/jre2IlzWxvnZcGQRcAJFIAkvb92h06blg4btj8rJIG9fBjVH/iSPbI3SAjnoWKCeaDe488GBKzSld05RZ8YfTWLJwRQAAAA",
-  "/images/projects/apartment-01/living-angle-mobile.webp": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQBACdASoRABQAPzmQulivKaUjqAqp4CcJYwAAHCsioNgR0UOe22rxAAD+cu0fFRUgTEzNNAU6WwnolgUwRAaT0MYb6b1WZQ6xyzheDt7/JMYhp+Q5BMWMn/AW/rpRqbApKbtlNPBdCuOFAAA=",
-  "/images/projects/apartment-01/living-angle.webp": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABQBACdASoUAA8APzmEuVOvKKWisAgB4CcJYgCdMoKP+Ajy7aa78pXW0S9oAP4W1lnQY8c4v9jk5/b/lo9AzaGWd+0sUWJ31CPJZYJ9SX1sFtuGt03853wA38g04WQboNXj02q1SUnpIvOV4V66QNOc4Bk4o4AA",
-  "/images/projects/apartment-01/living-card.webp": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwAwCdASoUAA0APzmGuVOvKSWisAgB4CcJZACdMoACp7q9B/BPAAD+HYBak+9YdJHWBQ1Ch9aWft/urdUek+XwOSnz07jdIANGJ9xBvUcJdnmYX/pE+vBnwLz87htnw4wsAAAA",
-  "/images/projects/apartment-01/living-mobile.webp": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAACQAwCdASoRABQAPzmSv1mvKaajqAgB4CcJYwC/OAoNxvthFE8gAPnjEEn+YRYSOj5XUj3mPcetVOQxNM4IyJN9iskZw+7lyau4tqkx5spgNMA+nOIYCHYhS+OU1slMw4XnBX9pmjqSSQ7IpplF/MkAjTcLtS/GwAAAAA==",
-  "/images/projects/apartment-01/living.webp": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAwCdASoUAA8APzmEuVOvKKWisAgB4CcJYgCdMoACtFFPPLUiz3aAAP08KSG3dR8tAJeoD8lwa/yq9AMupvvr4HJT5lJzzmOSgaMxv6t6/nHjaIS+gWFILCyOxkKP0lYkoaowAAA=",
-  "/images/projects/apartment-02/bedroom-card.webp": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJQBOmUI+PA6VoqPKCq+AA/pGVIQEo1n93fj2NVI9A+LnzI2Yo3AWkxTnMHeJOqPouH0WYcdOetL9nx2LFufq/kxCvBARO7WySAAAA",
-  "/images/projects/apartment-02/bedroom-mobile.webp": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQBACdASoRABQAPzmUwVmvKicjqAgB4CcJYwAAIYR7i1gDPmbyVKFgAAD318NStlvLTO7nM3hIc+SxTHLq3BEUFjxD2pPX7k/S99sjV7V313j93Sk8MKYSaegyX42roAk5aTuBoQ5gAAAA",
-  "/images/projects/apartment-02/bedroom.webp": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJQBOmUABQHw4pA6GaECgkAAD+Az2BB9ZZeqX/h9ZRtyeon+a9KCHoUyhTPIyj2j/u/nPAgmioTFgA1kihTvSamDJNAAAA",
-  "/images/projects/apartment-02/cover-card.webp": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACQAwCdASoUAA0APzmEuVOvKKWisAgB4CcJYwCw7CEIzG6ZV1HYAP5btFclB4qjR0VEUjYRhG+x+wX6ErdEU66NJnm1RRXRs7+Z03QVvzsBUA/6wAA=",
-  "/images/projects/apartment-02/cover-mobile.webp": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoRABQAPzmQulivKaUjqAqp4CcJZQDLLAiy7vcylfrxCIAA98QAgWy3gw6/9HKuyzyTKUDctmhMS/WmcGEhyIPavYt0Eff5Z4/gqotTa1cwofaZyoQefoOOxfynEAAA",
-  "/images/projects/apartment-02/cover.webp": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCsABl7KbwGxl3sAAD87xxFAubgkJAKiaEIOrERHr+SN1zLaKP2FC5P3K3tBeLqisQL0AA=",
-  "/images/projects/apartment-02/detail-crop.webp": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACQAwCdASoUAAoAPzmGuVOvKSWisAgB4CcJQBOgAprp2+NW7SeAAP6PpSZQc/WcaZSyKmKRdAI/RvJLnhAOIgvncVacFz6m4q8yjO1HU+GB04BtXjeAAA==",
-  "/images/projects/apartment-02/living-card.webp": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAwCdASoUAA0APzmGulQvKSWjMAgB4CcJZACw7AenHJT7AADJXEqyCFQZBgfMEKrsAoX669M/GrqLpUu+wU3wp2Q4kJtyhI5cv9h/EO0jo/BIslHHLLzQA/Cgh9NAAAA=",
-  "/images/projects/apartment-02/living-mobile.webp": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAwCdASoRABQAPzmUwVmvKicjqAgB4CcJYwCBoAI6k2l5ZQNvrWAAlT186cHV5wzw7rz/0wWKnkImSsQ9MVvIb6JEdSXN/nyap+b5FQiS6LwzwIGJGxn6t+kTFykgfo2uKH6k4fCgzIyBSgAAAA==",
-  "/images/projects/apartment-02/living.webp": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACwAwCdASoUAA8APzmEuVOvKKWisAgB4CcJZACdABtHbk1Bp1u7gADw222rVWvPZru1BGAsYtRo2625CatQFSHLPwop8CW1XanCCt+rOGOMh2yWnUBAklROnm8pB6ugAAA=",
-  "/images/projects/apartment-03/bathroom-angle-card.webp": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJQBOmUABwe9IiS4/c+wAA/szHbA6DT7FX7dt11ACIwfCAuzk1DXE3/fA96e+qvJCMQ2QC/LrpcGcAAAA=",
-  "/images/projects/apartment-03/bathroom-angle-mobile.webp": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAwCdASoRABQAPzmQvVgvKaYjqAqp4CcJZQDE2BF42Zwjod5Ni2yAAP6+Akpr7r9tytrfaOgMP89iPr5ToXOSYplMW8pDfcNoGbevMXg9+JBX/pqv/UoSj6iABUwA",
-  "/images/projects/apartment-03/bathroom-angle.webp": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBdgAV2KRv1RwUgAAP6+BYYNR/qOzY+aKeSytv7eYff2JsDHM2EgBlIlVbdNXW8r0BcgAAA=",
-  "/images/projects/apartment-03/bathroom-card.webp": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACQAwCdASoUAA0APzmEuVOvKKWisAgB4CcJQBYdgqZAtEbgkBL4APpiT/bZ9UOXPgDf9h0zeKc64uZZYEg61pEILZO9HpQmdZpVVsXtENspr41W/SZlweYAuGAAAA==",
-  "/images/projects/apartment-03/bathroom-mobile.webp": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwBACdASoRABQAPzmQvVgvKaYjqAqp4CcJYwC90AttY5viBuO23YWgXAAA+jNP9N7y2kCivO+42Xxu8QFPHlFOg+dMyu5cn6UEQ5ewo9z/VLWxclvpJeGqEd8sOhVUQhspBrAbbqBoj9QAAAA=",
-  "/images/projects/apartment-03/bathroom.webp": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJQBYdg++28ylkvYXe0AD6ekBg28Ny1BjP3cqWznk62YNHoWIw1uaiijjpVuYHcMhZCKF3tBObCg00AIYAAA==",
-  "/images/projects/apartment-03/bedroom-card.webp": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAABwAwCdASoUAA0APzmGuVOvKSWisAgB4CcJY0wATsyTkdzLjQAA/uvzRjtmK/kfay1fzT/GC1ocXymh5n4L3cZ2sf+E+o32mbBwIAAA",
-  "/images/projects/apartment-03/bedroom-mobile.webp": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABwAwCdASoRABQAPzmOvlevKaYkqAqp4CcJZQCw7BbJNyascAAA/uw95Ta5g+itlfj59cP+6VT40OZ8/hCwWIYdBNdfllpYZNr9lPspT3x2xGVPgvmGfMUkSLI1oBPgAAA=",
-  "/images/projects/apartment-03/bedroom.webp": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBdgBFVa2zcMffMRSQAAAP7ZduyzeuLAx3ux7YVUnffJ654xUp/fBYHuM8vwccbjwpQDTTv7kAAA",
-  "/images/projects/apartment-03/cover-card.webp": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAwCdASoUAA0APzmGuVOvKSWisAgB4CcJYwC7AB497p/bDdMyoAD+n+ukqqFvsbm0+RK+dgndcMXWvNFb2Yw/2xMhCR5+FrrtTuCeGZOYAAAA",
-  "/images/projects/apartment-03/cover-mobile.webp": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABwBACdASoRABQAPzmQulivKaUjqAqp4CcJZQC+Wf/gHojQRnd4jcveYE/7AAD+nlWsL4jGaUmfGkpq7vN7tfnlY8pGWVbElQtpfzD5BPZNP5g6i05Fi8c/NNbq6rPTEL/p9PGBYCAAAA==",
-  "/images/projects/apartment-03/cover.webp": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwC7ACK33wksbi0ywAAA/qFim0droJctfNbJpp5UO8baveaw2+sci+LEIEDuxOKcFmAA",
-  "/images/projects/apartment-03/detail-crop.webp": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAwCdASoUAAoAPzmGulQvKSWjMAgB4CcJYwCdABjsz8D+X3kMm0ooAP7OwhgZ8INm4l48hDWZdHanJLEiC5GLSn0SVX39g6j5aji7XAAAAA==",
-  "/images/sections/consultation-background.webp": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoUAA8APzmEuVOvKKWisAgB4CcJZgCdMoR3ABXKZ3DwRKvOAAD+LlNYwtklTm5oYuCLzgcx5VJZkLxoMqa92Uzfllc03mLFKIFiyDNn9CBGrMVMyLu/C/TlAvAAAA==",
-  "/images/sections/interior-materials.webp": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBACdASoUAA8APzmGuVOvKSWisAgB4CcJZgCdMoGv/gNnlwv8r+GUiAD+pTB81bY4g5/DAaf4cqTdCGRPZJs29OWyRdq7XALRL8tXONgTWI3VDu7RQU+3zECljBVQm6n251Pn+P+V84bXzgxJVAAA",
-  "/images/sections/portfolio-intro.webp": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAwCdASoUAA8APzmEuVOvKKWisAgB4CcJYgCdMoACtFFPPLUiz3aAAP08KSG3dR8tAJeoD8lwa/yq9AMupvvr4HJT5lJzzmOSgaMxv6t6/nHjaIS+gWFILCyOxkKP0lYkoaowAAA=",
-  "/images/sections/wood-light-detail.webp": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwBACdASoPABQAPzmEuVOvKKWisAgB4CcJaACdMoRwACn996wyJZvG0QAA/rnd//apzI3yZrweLTHzsC3+6M3fCwgIV1v1A/7tz5Cez5ZAW1iMuUUBDfRkhiY2dOiYAAA="
+  '/images/hero/hero-bright.webp':
+    'data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCsABl7GkUvi2pgAPzvHEUC5uBrC7pZb6nsU4R6/kjdcy2ij+5Do1tiTrRaVmW/SA5noIAAAA==',
+  '/images/hero/hero-city-evening.webp':
+    'data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACQAwCdASoUAAsAPzmGulOvKKWisAgB4CcJZACsACCPLeDBeTAAAP0qaiFtKJy2/hOS4Ct39z/FuQeQHV47kwY97dZgWX1hKffXErK8Ku3S2Cbtlt4t1pKnpoQIMVGT4sAAAA==',
+  '/images/projects/apartment-01/bathroom-card.webp':
+    'data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwBACdASoUAA0APzmEuVOvKKWisAgB4CcJZgCdMoGv/gPcp/5/SOHAiyq8K0qAAP4j55aI/+CWMmiS3RfyxeIiXvMprooOhJAJesk8FomKIkTnqMZn2Mzz0Zvjd0BhZaJVg/U+UFy4WDWduAA=',
+  '/images/projects/apartment-01/bathroom-mobile.webp':
+    'data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACwBACdASoRABQAPzmUwVmvKicjqAgB4CcJQBdnKAANwCDcd0Qz5qysM+ED0TAAAP5z+Y4skMXMmPfBUupYlfh4v9mxk9z31As8NSvDWzsUP2SNl5qUc296ZziIdPsy4XMz11s+W/AR02lCz6LfNEgA',
+  '/images/projects/apartment-01/bathroom.webp':
+    'data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwBACdASoUAA8APzmEuVOvKKWisAgB4CcJZACdMoMYAEsmXDMT0+2NGAAA/heC9nJwYlMsOROt5nPdDgtmD8hTxExlYhiqvf9MIjzSULxTEfskr3OiE1y/bK5B5B3prEcOtGhOtlgh0TYA3NAAAA==',
+  '/images/projects/apartment-01/bedroom-card.webp':
+    'data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJZACdMoABoaeZbpN4mAwA/oGQYUeYP6XqB2clxmmB76dnXPAse7hdgRoV5JA3r4NWbUfUOud2hNbPmn3/oM8J5agOIZcwAAA=',
+  '/images/projects/apartment-01/bedroom-mobile.webp':
+    'data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAwCdASoRABQAPzmMuVavKSUjqA1R4CcJYwDGfA34nDEjlSxtfooAAP0iFZCwcGwocZDXksJCejd6NPxqfymHAJ727MtW061pdgpCVceLGtuRcZMbUqEKO+4AAA==',
+  '/images/projects/apartment-01/bedroom.webp':
+    'data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwBACdASoUAA8APzmEuVOvKKWisAgB4CcJZACdMoACtaWKDtb+/dItkkAA/oGQW0HDZZsQ+WCrdDm/oK2Ju3DzAZcXLbL4HJT59CFSYUcEeFqkDXyOCGZ0oj7aAyClLKu4ENRkAAA=',
+  '/images/projects/apartment-01/cover-card.webp':
+    'data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJYl2ARgATjcq3i6YgAP7fts64OZuiHhyJAziTFgHdgz0PqnWDIyCWrbq1fpcZmbtUEv5lshVz8Upjk0sppaoIAAA=',
+  '/images/projects/apartment-01/cover-mobile.webp':
+    'data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwBACdASoRABQAPzmUwFmvKiajqAgB4CcJYwAAKTv2+MRleEO9HOZEaagw9oAAAP0fppWFemplYtW/aUSuFdO0bYtGH2hoD0bMDvf37ydz7sb3OYTIKGOpPFHzGnxeFfOrUp2TZICfB1y6WeVSBfrpgd3wAAAA',
+  '/images/projects/apartment-01/cover.webp':
+    'data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZACsACCPLeDBeTAAAP0qaiFtKJy2/hOS4Ct39z/FuQeQHV47kwY97dZgWX1hKffXErK8Ku3S2Cbtlt4t1pKnpoQIMVGT4sAAAA==',
+  '/images/projects/apartment-01/detail-crop.webp':
+    'data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQBACdASoUAAoAPzmGuVOvKSWisAgB4CcJYgCdMoACAx2VJFuwZ3e4AAD+dH9Ere7fGlSvDmm95kgd/iBPThlzVuPZBxwsgicR5Pt7g7JPHrJsy1u5EALa8QaR9AEkgDupEAAA',
+  '/images/projects/apartment-01/hallway-card.webp':
+    'data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJagCdMoACEwUpHhj1U6AA/i5SRQbJKnpRnLVALUvUyyks3+AJYQ6oPzTvjb0ScyGMjObEcKUlkLFXQBtPjckXNtFvDLXoAAA=',
+  '/images/projects/apartment-01/hallway-mobile.webp':
+    'data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwBACdASoRABQAPzmWwlmvKqcjqAgB4CcJQBdgAZdg3Z4FT3Gf/Hp02AAA/josmUb0qeCdqLcx5TAnaZqh0P6tIhBhN2HfZ81ACNQWHUIZETPNyj+O8jsAHCEVqaby/xxUE2AA',
+  '/images/projects/apartment-01/hallway.webp':
+    'data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoUAA8APzmGuVOvKSWisAgB4CcJZgCdMoR3ABXKZ3DwRKvOAAD+LlNYwtklTm5oYuCLzgcx5VJZkLxoMqa92Uzfllc03mLFKIFiyDNn9CBGrMVMyLu/C/TlAvAAAA==',
+  '/images/projects/apartment-01/kitchen-card.webp':
+    'data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACwAwCdASoUAA0APzmEuVOvKKWisAgB4CcJZgCdMoACvxgFD2X8QAD+fAGZB+P87l3G75Wcc68zBXIXtff0XPOZs5ZvcWioo8OkLL5RS32ANxYbDM7l97nHrK2exvG8mKw10z00z3V4ZDoA',
+  '/images/projects/apartment-01/kitchen-mobile.webp':
+    'data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBQCdASoRABQAPzmUwFmvKiajqAgB4CcJZACdMsvGUBNDrnGW089Tt5uR3zX9T8QAAP5IgSnN34Eun0oPoytJCKEqlHNJx/31FquY0cTC09wB8olJEhlRxfTyP3Zu/M2M65r4ym//q3w0poKhM66tQp7SA0TKncAAAA==',
+  '/images/projects/apartment-01/kitchen.webp':
+    'data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQBACdASoUAA8APzmEuVOvKKWisAgB4CcJaACdMoRwFf/gNnlwv8r+GUiAAP6lMHzVtjiDn8MBp/hypN0IZE9kmzb05bJF2n3xTfmTJ7Hcc3gSu2w3Z2mOs/wg7lAwqt2ItZp11+DZNT2TBQQ4AA==',
+  '/images/projects/apartment-01/living-angle-card.webp':
+    'data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJZACdMoACrr8jb3HegAAA/jre2IlzWxvnZcGQRcAJFIAkvb92h06blg4btj8rJIG9fBjVH/iSPbI3SAjnoWKCeaDe488GBKzSld05RZ8YfTWLJwRQAAAA',
+  '/images/projects/apartment-01/living-angle-mobile.webp':
+    'data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQBACdASoRABQAPzmQulivKaUjqAqp4CcJYwAAHCsioNgR0UOe22rxAAD+cu0fFRUgTEzNNAU6WwnolgUwRAaT0MYb6b1WZQ6xyzheDt7/JMYhp+Q5BMWMn/AW/rpRqbApKbtlNPBdCuOFAAA=',
+  '/images/projects/apartment-01/living-angle.webp':
+    'data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABQBACdASoUAA8APzmEuVOvKKWisAgB4CcJYgCdMoKP+Ajy7aa78pXW0S9oAP4W1lnQY8c4v9jk5/b/lo9AzaGWd+0sUWJ31CPJZYJ9SX1sFtuGt03853wA38g04WQboNXj02q1SUnpIvOV4V66QNOc4Bk4o4AA',
+  '/images/projects/apartment-01/living-card.webp':
+    'data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwAwCdASoUAA0APzmGuVOvKSWisAgB4CcJZACdMoACp7q9B/BPAAD+HYBak+9YdJHWBQ1Ch9aWft/urdUek+XwOSnz07jdIANGJ9xBvUcJdnmYX/pE+vBnwLz87htnw4wsAAAA',
+  '/images/projects/apartment-01/living-mobile.webp':
+    'data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAACQAwCdASoRABQAPzmSv1mvKaajqAgB4CcJYwC/OAoNxvthFE8gAPnjEEn+YRYSOj5XUj3mPcetVOQxNM4IyJN9iskZw+7lyau4tqkx5spgNMA+nOIYCHYhS+OU1slMw4XnBX9pmjqSSQ7IpplF/MkAjTcLtS/GwAAAAA==',
+  '/images/projects/apartment-01/living.webp':
+    'data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAwCdASoUAA8APzmEuVOvKKWisAgB4CcJYgCdMoACtFFPPLUiz3aAAP08KSG3dR8tAJeoD8lwa/yq9AMupvvr4HJT5lJzzmOSgaMxv6t6/nHjaIS+gWFILCyOxkKP0lYkoaowAAA=',
+  '/images/projects/apartment-02/bedroom-card.webp':
+    'data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJQBOmUI+PA6VoqPKCq+AA/pGVIQEo1n93fj2NVI9A+LnzI2Yo3AWkxTnMHeJOqPouH0WYcdOetL9nx2LFufq/kxCvBARO7WySAAAA',
+  '/images/projects/apartment-02/bedroom-mobile.webp':
+    'data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQBACdASoRABQAPzmUwVmvKicjqAgB4CcJYwAAIYR7i1gDPmbyVKFgAAD318NStlvLTO7nM3hIc+SxTHLq3BEUFjxD2pPX7k/S99sjV7V313j93Sk8MKYSaegyX42roAk5aTuBoQ5gAAAA',
+  '/images/projects/apartment-02/bedroom.webp':
+    'data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJQBOmUABQHw4pA6GaECgkAAD+Az2BB9ZZeqX/h9ZRtyeon+a9KCHoUyhTPIyj2j/u/nPAgmioTFgA1kihTvSamDJNAAAA',
+  '/images/projects/apartment-02/cover-card.webp':
+    'data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACQAwCdASoUAA0APzmEuVOvKKWisAgB4CcJYwCw7CEIzG6ZV1HYAP5btFclB4qjR0VEUjYRhG+x+wX6ErdEU66NJnm1RRXRs7+Z03QVvzsBUA/6wAA=',
+  '/images/projects/apartment-02/cover-mobile.webp':
+    'data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoRABQAPzmQulivKaUjqAqp4CcJZQDLLAiy7vcylfrxCIAA98QAgWy3gw6/9HKuyzyTKUDctmhMS/WmcGEhyIPavYt0Eff5Z4/gqotTa1cwofaZyoQefoOOxfynEAAA',
+  '/images/projects/apartment-02/cover.webp':
+    'data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCsABl7KbwGxl3sAAD87xxFAubgkJAKiaEIOrERHr+SN1zLaKP2FC5P3K3tBeLqisQL0AA=',
+  '/images/projects/apartment-02/detail-crop.webp':
+    'data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACQAwCdASoUAAoAPzmGuVOvKSWisAgB4CcJQBOgAprp2+NW7SeAAP6PpSZQc/WcaZSyKmKRdAI/RvJLnhAOIgvncVacFz6m4q8yjO1HU+GB04BtXjeAAA==',
+  '/images/projects/apartment-02/living-card.webp':
+    'data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAwCdASoUAA0APzmGulQvKSWjMAgB4CcJZACw7AenHJT7AADJXEqyCFQZBgfMEKrsAoX669M/GrqLpUu+wU3wp2Q4kJtyhI5cv9h/EO0jo/BIslHHLLzQA/Cgh9NAAAA=',
+  '/images/projects/apartment-02/living-mobile.webp':
+    'data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAwCdASoRABQAPzmUwVmvKicjqAgB4CcJYwCBoAI6k2l5ZQNvrWAAlT186cHV5wzw7rz/0wWKnkImSsQ9MVvIb6JEdSXN/nyap+b5FQiS6LwzwIGJGxn6t+kTFykgfo2uKH6k4fCgzIyBSgAAAA==',
+  '/images/projects/apartment-02/living.webp':
+    'data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACwAwCdASoUAA8APzmEuVOvKKWisAgB4CcJZACdABtHbk1Bp1u7gADw222rVWvPZru1BGAsYtRo2625CatQFSHLPwop8CW1XanCCt+rOGOMh2yWnUBAklROnm8pB6ugAAA=',
+  '/images/projects/apartment-03/bathroom-angle-card.webp':
+    'data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJQBOmUABwe9IiS4/c+wAA/szHbA6DT7FX7dt11ACIwfCAuzk1DXE3/fA96e+qvJCMQ2QC/LrpcGcAAAA=',
+  '/images/projects/apartment-03/bathroom-angle-mobile.webp':
+    'data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAwCdASoRABQAPzmQvVgvKaYjqAqp4CcJZQDE2BF42Zwjod5Ni2yAAP6+Akpr7r9tytrfaOgMP89iPr5ToXOSYplMW8pDfcNoGbevMXg9+JBX/pqv/UoSj6iABUwA',
+  '/images/projects/apartment-03/bathroom-angle.webp':
+    'data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBdgAV2KRv1RwUgAAP6+BYYNR/qOzY+aKeSytv7eYff2JsDHM2EgBlIlVbdNXW8r0BcgAAA=',
+  '/images/projects/apartment-03/bathroom-card.webp':
+    'data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACQAwCdASoUAA0APzmEuVOvKKWisAgB4CcJQBYdgqZAtEbgkBL4APpiT/bZ9UOXPgDf9h0zeKc64uZZYEg61pEILZO9HpQmdZpVVsXtENspr41W/SZlweYAuGAAAA==',
+  '/images/projects/apartment-03/bathroom-mobile.webp':
+    'data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwBACdASoRABQAPzmQvVgvKaYjqAqp4CcJYwC90AttY5viBuO23YWgXAAA+jNP9N7y2kCivO+42Xxu8QFPHlFOg+dMyu5cn6UEQ5ewo9z/VLWxclvpJeGqEd8sOhVUQhspBrAbbqBoj9QAAAA=',
+  '/images/projects/apartment-03/bathroom.webp':
+    'data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJQBYdg++28ylkvYXe0AD6ekBg28Ny1BjP3cqWznk62YNHoWIw1uaiijjpVuYHcMhZCKF3tBObCg00AIYAAA==',
+  '/images/projects/apartment-03/bedroom-card.webp':
+    'data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAABwAwCdASoUAA0APzmGuVOvKSWisAgB4CcJY0wATsyTkdzLjQAA/uvzRjtmK/kfay1fzT/GC1ocXymh5n4L3cZ2sf+E+o32mbBwIAAA',
+  '/images/projects/apartment-03/bedroom-mobile.webp':
+    'data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABwAwCdASoRABQAPzmOvlevKaYkqAqp4CcJZQCw7BbJNyascAAA/uw95Ta5g+itlfj59cP+6VT40OZ8/hCwWIYdBNdfllpYZNr9lPspT3x2xGVPgvmGfMUkSLI1oBPgAAA=',
+  '/images/projects/apartment-03/bedroom.webp':
+    'data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBdgBFVa2zcMffMRSQAAAP7ZduyzeuLAx3ux7YVUnffJ654xUp/fBYHuM8vwccbjwpQDTTv7kAAA',
+  '/images/projects/apartment-03/cover-card.webp':
+    'data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAwCdASoUAA0APzmGuVOvKSWisAgB4CcJYwC7AB497p/bDdMyoAD+n+ukqqFvsbm0+RK+dgndcMXWvNFb2Yw/2xMhCR5+FrrtTuCeGZOYAAAA',
+  '/images/projects/apartment-03/cover-mobile.webp':
+    'data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABwBACdASoRABQAPzmQulivKaUjqAqp4CcJZQC+Wf/gHojQRnd4jcveYE/7AAD+nlWsL4jGaUmfGkpq7vN7tfnlY8pGWVbElQtpfzD5BPZNP5g6i05Fi8c/NNbq6rPTEL/p9PGBYCAAAA==',
+  '/images/projects/apartment-03/cover.webp':
+    'data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwC7ACK33wksbi0ywAAA/qFim0droJctfNbJpp5UO8baveaw2+sci+LEIEDuxOKcFmAA',
+  '/images/projects/apartment-03/detail-crop.webp':
+    'data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAwCdASoUAAoAPzmGulQvKSWjMAgB4CcJYwCdABjsz8D+X3kMm0ooAP7OwhgZ8INm4l48hDWZdHanJLEiC5GLSn0SVX39g6j5aji7XAAAAA==',
+  '/images/sections/consultation-background.webp':
+    'data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoUAA8APzmEuVOvKKWisAgB4CcJZgCdMoR3ABXKZ3DwRKvOAAD+LlNYwtklTm5oYuCLzgcx5VJZkLxoMqa92Uzfllc03mLFKIFiyDNn9CBGrMVMyLu/C/TlAvAAAA==',
+  '/images/sections/interior-materials.webp':
+    'data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBACdASoUAA8APzmGuVOvKSWisAgB4CcJZgCdMoGv/gNnlwv8r+GUiAD+pTB81bY4g5/DAaf4cqTdCGRPZJs29OWyRdq7XALRL8tXONgTWI3VDu7RQU+3zECljBVQm6n251Pn+P+V84bXzgxJVAAA',
+  '/images/sections/portfolio-intro.webp':
+    'data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAwCdASoUAA8APzmEuVOvKKWisAgB4CcJYgCdMoACtFFPPLUiz3aAAP08KSG3dR8tAJeoD8lwa/yq9AMupvvr4HJT5lJzzmOSgaMxv6t6/nHjaIS+gWFILCyOxkKP0lYkoaowAAA=',
+  '/images/sections/wood-light-detail.webp':
+    'data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwBACdASoPABQAPzmEuVOvKKWisAgB4CcJaACdMoRwACn996wyJZvG0QAA/rnd//apzI3yZrweLTHzsC3+6M3fCwgIV1v1A/7tz5Cez5ZAW1iMuUUBDfRkhiY2dOiYAAA=',
 };

@@ -1,0 +1,13 @@
+// Generated from registered MONOLITH renovation frames, kept separate from the existing photo registry.
+export const renovationBlur: Record<string, string> = {
+  '/images/hero-renovation/01-raw-shell.webp':
+    'data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAACwBACdASogABIAPtVapEwoJSOiMAgBABqJZwC3uCPNhbVYflNJAL1ZaXmZzOUwAN1EVyPYMidgJeQFdxxcggHoYA2EetsYjKC72kLGAkDp6/AfLx5PsIC1PQ39M3kjfGW52L/AEv9znLA3rPhbU1aunUElVgrfbUjABmPQMZXGxDFSiBlJ1ejdWNAAAA==',
+  '/images/hero-renovation/02-finished-shell.webp':
+    'data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACQBQCdASogABIAPtVgpk0oJiOiMBgIAQAaiWUAtOgyyQw/e3EK0AsVjHWZhjGDgr94nbQwwAD+sY1j8S3yBEd0YnUM7Rt5+xDYi5hbeVPiCR0uVtSbAosIr84nRVCDUeK/OUQ/EIyWBcJ9lZBOV+CvKDp7MnsTrpLAz0mT2OMGIB0NcoRHbFFFmQanPjIrCJbscjN2XzQfjWjV0IrU5rQ0YbwPWrDryigAAA==',
+  '/images/hero-renovation/03-lighting.webp':
+    'data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAACwBQCdASogABIAPtVYpEwoJSOiMAgBABqJQBOl+t6AXmgI9A1DukS6Qr4NP9vHY8FYiJOxsZYA90pYlI4xnzv5loZqR/Fxi5tYVxGykbONZRoMuvSqz9cl/hTgECuYeAQHIsNn9J2IUcsPRQpA/S2C3HXkFYoJYE0ljeyoiZ9c62DZXXmw6l1SceJyeIksP3fGeU5M1hrTIIlr7zmcp/r30o0BrkQttwc/dukhtVHvv2F5pwAAAA==',
+  '/images/hero-renovation/04-kitchen.webp':
+    'data:image/webp;base64,UklGRtYAAABXRUJQVlA4IMoAAAAwBgCdASogABIAPtVap02oJSOiMBgIAQAaiUATpm6uMNiWLToz947XllzDDWWb52I4eD0+cdmmFauAAP2wfEGdh8pjj3BFE8IjW2oaBzKPJlsaZ1mEDUHm2GJ3og01VqC6RXSiRbQedbtIADKiJKdcE1IxpApPnt6wsaeqjP2jRJCxAqh8cXsUmDJUNd8aR6WUTvaZBTYaGR5CdILb6NIO7nyWA6Sgsaij49xmaClLfQi8VTc7aj2vKwoIz0pRNvkmVNFQOkUggYAA',
+  '/images/hero-renovation/05-finished-interior.webp':
+    'data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAADwBACdASogABIAPtVYpEwoJSOiMAgBABqJQBOmdEHAAsBjpm13il+xG/7xJQYQvQAA/bB0q40hDPveQb331In/QOqv+U6pirNkEjLmjtLA6KUuRwONLmRlXMreQWbkCAx4+sG2wLsqNtg1qff5DRd0DVZJcfieC2ZKKqpl3Yhh2nkQoTQ9NKWhUxrJ3irq6xPPALePC5hukl2BSrc4qilYrtpsfCRKbH114psiecFqWqfcFCbu2jAo92BYuAMTOAAAAA==',
+};

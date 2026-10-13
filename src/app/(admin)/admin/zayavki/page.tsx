@@ -1,2 +1,20 @@
-import {Inbox} from 'lucide-react';
-export default function AdminLeads(){return <><div className="admin-heading"><span className="admin-subtitle">CRM / REQUESTS</span><h1>Заявки</h1><p>Будущие обращения из формы консультации, сметы и контактов.</p></div><div className="admin-empty"><Inbox size={36}/><h2>Хранилище заявок не подключено</h2><p>После подключения PostgreSQL формы будут сохранять обращения, присваивать статусы NEW / IN_PROGRESS / CLOSED и уведомлять сотрудников.</p></div></>}
+import { Inbox } from 'lucide-react';
+export default function AdminLeads() {
+  return (
+    <>
+      <div className="admin-heading">
+        <span className="admin-subtitle">CRM / REQUESTS</span>
+        <h1>Заявки</h1>
+        <p>Будущие обращения из формы консультации, сметы и контактов.</p>
+      </div>
+      <div className="admin-empty">
+        <Inbox size={36} />
+        <h2>Хранилище заявок не подключено</h2>
+        <p>
+          После подключения PostgreSQL формы будут сохранять обращения, присваивать статусы NEW /
+          IN_PROGRESS / CLOSED и уведомлять сотрудников.
+        </p>
+      </div>
+    </>
+  );
+}

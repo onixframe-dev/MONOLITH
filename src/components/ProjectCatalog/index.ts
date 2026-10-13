@@ -1,1 +1,0 @@
-export { ProjectCatalog } from './ProjectCatalog';

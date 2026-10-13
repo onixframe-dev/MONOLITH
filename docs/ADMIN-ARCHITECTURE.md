@@ -6,13 +6,13 @@
 
 ## Модули и маршруты
 
-| Модуль | Публичные маршруты | Администратор |
-|---|---|---|
-| Каталог | `/proekty`, `/proekty/[slug]` | `/admin/proekty` |
-| Медиа | галереи и hero | `/admin/media` |
-| Заявки | `/kontakty`, формы на главной | `/admin/zayavki` |
-| Отзывы | `/otzyvy` | `/admin/otzyvy` |
-| Контент и SEO | все публичные страницы | `/admin/nastroyki` (проект) |
+| Модуль        | Публичные маршруты            | Администратор               |
+| ------------- | ----------------------------- | --------------------------- |
+| Каталог       | `/proekty`, `/proekty/[slug]` | `/admin/proekty`            |
+| Медиа         | галереи и hero                | `/admin/media`              |
+| Заявки        | `/kontakty`, формы на главной | `/admin/zayavki`            |
+| Отзывы        | `/otzyvy`                     | `/admin/otzyvy`             |
+| Контент и SEO | все публичные страницы        | `/admin/nastroyki` (проект) |
 
 Код: `src/types/content.ts` — контракты; `src/lib/projects.ts` — временный источник данных; `prisma/schema.prisma` — схема будущей БД; `src/app/api/` — контракты маршрутов. `/admin` — только read-only, в production скрыт middleware, пока нет настоящей сессии.
 

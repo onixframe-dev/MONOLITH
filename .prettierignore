@@ -1,0 +1,17 @@
+node_modules
+.next
+out
+coverage
+*.log
+.prisma
+*.db
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+pnpm-lock-store
+build
+dist
+.vercel
+.output
+.next/cache
+public/favicon.ico

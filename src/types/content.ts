@@ -1,5 +1,11 @@
-export type PublicationStatus = "DRAFT" | "PUBLISHED" | "ARCHIVED";
-export type MediaAsset = { src: string; alt: string; room: string; cardSrc?: string; mobileSrc?: string };
+export type PublicationStatus = 'DRAFT' | 'PUBLISHED' | 'ARCHIVED';
+export type MediaAsset = {
+  src: string;
+  alt: string;
+  room: string;
+  cardSrc?: string;
+  mobileSrc?: string;
+};
 export type Project = {
   id: string;
   slug: string;
@@ -16,6 +22,13 @@ export type Project = {
   sortOrder: number;
   isConcept: boolean;
 };
-export type LeadKind = "CONSULTATION" | "ESTIMATE" | "CATALOG" | "GENERAL";
-export type LeadInput = { name: string; phone: string; email?: string; message?: string; kind: LeadKind; consent: boolean };
+export type LeadKind = 'CONSULTATION' | 'ESTIMATE' | 'CATALOG' | 'GENERAL';
+export type LeadInput = {
+  name: string;
+  phone: string;
+  email?: string;
+  message?: string;
+  kind: LeadKind;
+  consent: boolean;
+};
 export type ReviewInput = { name: string; rating: number; comment: string; consent: boolean };

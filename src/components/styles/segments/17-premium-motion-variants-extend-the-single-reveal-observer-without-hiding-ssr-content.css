@@ -1,7 +1,123 @@
 /* Premium motion variants extend the single Reveal observer without hiding SSR content. */
-.site-header--scrolled{background:rgba(12,14,12,.9)}@supports(backdrop-filter:blur(12px)){.site-header--scrolled{background:rgba(12,14,12,.78)}}
-.reveal.reveal-ready[data-motion=image]{opacity:1;transform:none;clip-path:inset(0 0 0 100%);transition:clip-path .9s cubic-bezier(.16,1,.3,1);will-change:clip-path}.reveal.reveal-ready[data-motion=image] img{transform:scale(1.055);transition:transform 1.05s cubic-bezier(.16,1,.3,1)}.reveal.reveal-ready[data-motion=image].is-visible{clip-path:inset(0);will-change:auto}.reveal.reveal-ready[data-motion=image].is-visible img{transform:scale(1)}
-.reveal.reveal-ready[data-motion=line]{transform:translate3d(0,13px,0)}.reveal[data-motion=line] .service-row{position:relative}.reveal[data-motion=line] .service-row:before{content:'';position:absolute;top:0;left:0;width:100%;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;opacity:.45;transition:transform .75s cubic-bezier(.16,1,.3,1) var(--reveal-delay,0ms)}.reveal.reveal-ready[data-motion=line].is-visible .service-row:before{transform:scaleX(1)}
-.reveal.reveal-ready[data-motion=stagger]{transform:translate3d(0,26px,0)}.reveal.reveal-ready[data-motion=stagger] .stage-rule{width:0;transition:width .7s cubic-bezier(.16,1,.3,1) calc(var(--reveal-delay,0ms) + 180ms)}.reveal.reveal-ready[data-motion=stagger].is-visible .stage-rule{width:44px}
-.reveal.reveal-ready[data-motion=form]{transform:translate3d(0,22px,0)}.reveal.reveal-ready[data-motion=form] .form-fields>label,.reveal.reveal-ready[data-motion=form] .estimate-controls>label,.reveal.reveal-ready[data-motion=form] .form-end,.reveal.reveal-ready[data-motion=form] .estimate-summary{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .6s cubic-bezier(.16,1,.3,1)}.reveal.reveal-ready[data-motion=form].is-visible .form-fields>label:nth-child(1),.reveal.reveal-ready[data-motion=form].is-visible .estimate-controls>label:nth-child(1){opacity:1;transform:none;transition-delay:120ms}.reveal.reveal-ready[data-motion=form].is-visible .form-fields>label:nth-child(2),.reveal.reveal-ready[data-motion=form].is-visible .estimate-controls>label:nth-child(2){opacity:1;transform:none;transition-delay:190ms}.reveal.reveal-ready[data-motion=form].is-visible .form-fields>label:nth-child(3),.reveal.reveal-ready[data-motion=form].is-visible .estimate-controls>label:nth-child(3){opacity:1;transform:none;transition-delay:260ms}.reveal.reveal-ready[data-motion=form].is-visible .form-end,.reveal.reveal-ready[data-motion=form].is-visible .estimate-summary{opacity:1;transform:none;transition-delay:330ms}.lead-form input:focus-visible,.lead-form textarea:focus-visible,.estimate-controls select:focus-visible{outline:1px solid var(--accent);outline-offset:2px;box-shadow:0 0 0 4px rgba(217,185,151,.16)}
-@media(prefers-reduced-motion:reduce){.reveal.reveal-ready[data-motion=image],.reveal.reveal-ready[data-motion=line],.reveal.reveal-ready[data-motion=stagger],.reveal.reveal-ready[data-motion=form]{opacity:1!important;transform:none!important;clip-path:none!important;transition:none!important}.reveal.reveal-ready[data-motion=image] img,.reveal.reveal-ready[data-motion=form] .form-fields>label,.reveal.reveal-ready[data-motion=form] .estimate-controls>label,.reveal.reveal-ready[data-motion=form] .form-end,.reveal.reveal-ready[data-motion=form] .estimate-summary{opacity:1!important;transform:none!important;transition:none!important}}
+.site-header--scrolled {
+  background: rgba(12, 14, 12, 0.9);
+}
+@supports (backdrop-filter: blur(12px)) {
+  .site-header--scrolled {
+    background: rgba(12, 14, 12, 0.78);
+  }
+}
+.reveal.reveal-ready[data-motion='image'] {
+  opacity: 1;
+  transform: none;
+  clip-path: inset(0 0 0 100%);
+  transition: clip-path 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: clip-path;
+}
+.reveal.reveal-ready[data-motion='image'] img {
+  transform: scale(1.055);
+  transition: transform 1.05s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.reveal-ready[data-motion='image'].is-visible {
+  clip-path: inset(0);
+  will-change: auto;
+}
+.reveal.reveal-ready[data-motion='image'].is-visible img {
+  transform: scale(1);
+}
+.reveal.reveal-ready[data-motion='line'] {
+  transform: translate3d(0, 13px, 0);
+}
+.reveal[data-motion='line'] .service-row {
+  position: relative;
+}
+.reveal[data-motion='line'] .service-row:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  opacity: 0.45;
+  transition: transform 0.75s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+}
+.reveal.reveal-ready[data-motion='line'].is-visible .service-row:before {
+  transform: scaleX(1);
+}
+.reveal.reveal-ready[data-motion='stagger'] {
+  transform: translate3d(0, 26px, 0);
+}
+.reveal.reveal-ready[data-motion='stagger'] .stage-rule {
+  width: 0;
+  transition: width 0.7s cubic-bezier(0.16, 1, 0.3, 1) calc(var(--reveal-delay, 0ms) + 180ms);
+}
+.reveal.reveal-ready[data-motion='stagger'].is-visible .stage-rule {
+  width: 44px;
+}
+.reveal.reveal-ready[data-motion='form'] {
+  transform: translate3d(0, 22px, 0);
+}
+.reveal.reveal-ready[data-motion='form'] .form-fields > label,
+.reveal.reveal-ready[data-motion='form'] .estimate-controls > label,
+.reveal.reveal-ready[data-motion='form'] .form-end,
+.reveal.reveal-ready[data-motion='form'] .estimate-summary {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.reveal-ready[data-motion='form'].is-visible .form-fields > label:nth-child(1),
+.reveal.reveal-ready[data-motion='form'].is-visible .estimate-controls > label:nth-child(1) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 120ms;
+}
+.reveal.reveal-ready[data-motion='form'].is-visible .form-fields > label:nth-child(2),
+.reveal.reveal-ready[data-motion='form'].is-visible .estimate-controls > label:nth-child(2) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 190ms;
+}
+.reveal.reveal-ready[data-motion='form'].is-visible .form-fields > label:nth-child(3),
+.reveal.reveal-ready[data-motion='form'].is-visible .estimate-controls > label:nth-child(3) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 260ms;
+}
+.reveal.reveal-ready[data-motion='form'].is-visible .form-end,
+.reveal.reveal-ready[data-motion='form'].is-visible .estimate-summary {
+  opacity: 1;
+  transform: none;
+  transition-delay: 330ms;
+}
+.lead-form input:focus-visible,
+.lead-form textarea:focus-visible,
+.estimate-controls select:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(217, 185, 151, 0.16);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal.reveal-ready[data-motion='image'],
+  .reveal.reveal-ready[data-motion='line'],
+  .reveal.reveal-ready[data-motion='stagger'],
+  .reveal.reveal-ready[data-motion='form'] {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+    transition: none !important;
+  }
+  .reveal.reveal-ready[data-motion='image'] img,
+  .reveal.reveal-ready[data-motion='form'] .form-fields > label,
+  .reveal.reveal-ready[data-motion='form'] .estimate-controls > label,
+  .reveal.reveal-ready[data-motion='form'] .form-end,
+  .reveal.reveal-ready[data-motion='form'] .estimate-summary {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
