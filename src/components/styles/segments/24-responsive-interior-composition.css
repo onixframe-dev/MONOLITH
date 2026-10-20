@@ -1,57 +1,104 @@
 /* Final responsive composition rules: placed after the narrative sizing layer. */
 @media (min-width: 768px) and (max-width: 1199px) {
   .renov-scene-stack {
-    inset: 0 0 auto;
-    height: clamp(300px, 47svh, 600px);
+    inset: 0;
+    height: 100%;
   }
   .renov-image {
     object-fit: cover;
-    object-position: center;
+    object-position: center 43%;
   }
   .renov-tint {
-    inset: 0 0 auto;
-    height: clamp(300px, 47svh, 600px);
-    background: linear-gradient(
-      0deg,
-      #111311 0%,
-      rgba(17, 19, 17, 0.12) 25%,
-      rgba(17, 19, 17, 0) 58%
-    );
+    inset: 0;
+    height: 100%;
+    background:
+      linear-gradient(180deg, rgba(8, 10, 9, 0.27) 0%, rgba(8, 10, 9, 0.02) 25%, transparent 49%),
+      linear-gradient(
+        0deg,
+        rgba(8, 10, 9, 0.9) 0%,
+        rgba(8, 10, 9, 0.61) 31%,
+        rgba(8, 10, 9, 0.13) 57%,
+        transparent 75%
+      );
   }
   .renov-content {
-    align-items: flex-start;
-    padding-top: calc(clamp(300px, 47svh, 600px) + 18px);
-    padding-bottom: 52px;
+    height: 100%;
+    align-items: stretch;
+    padding-top: calc(env(safe-area-inset-top) + 88px);
+    padding-bottom: calc(env(safe-area-inset-bottom) + 52px);
   }
   .renov-left {
-    grid-template-rows: auto minmax(245px, auto) auto;
+    position: relative;
+    display: block;
+    width: 100%;
     max-width: 700px;
-    align-content: start;
+    height: 100%;
   }
   .renov-brand {
-    margin-bottom: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
   }
   .renov-copy-wrap {
-    min-height: clamp(245px, 31svh, 270px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: clamp(205px, 29svh, 280px);
+  }
+  .renov-left:has(.renov-cta[aria-hidden='false']) .renov-copy-wrap {
+    bottom: clamp(68px, 9svh, 92px);
   }
   .renov-copy h1,
   .renov-copy h2 {
-    font-size: clamp(38px, 5vw, 52px);
-    margin-bottom: 14px;
+    font-size: clamp(39px, 5.2vw, 58px);
+    line-height: 1.02;
+    margin-bottom: 12px;
   }
   .renov-copy p {
+    max-width: 540px;
     font-size: 13px;
     line-height: 1.52;
   }
+  .renov-cta {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 470px;
+    min-height: 54px;
+  }
+  .renov-cta[aria-hidden='false'] {
+    transform: none !important;
+  }
   .renov-footer {
-    bottom: 18px;
+    right: 0;
+    bottom: calc(env(safe-area-inset-bottom) + 18px);
+    left: 0;
   }
 }
 
 /* Keep the final CTA clear of the persistent progress row on short landscape tablets. */
 @media (min-width: 768px) and (max-width: 1199px) and (max-height: 700px) {
-  .renov-cta[aria-hidden='false'] {
-    transform: translateY(-72px) !important;
+  .renov-content {
+    padding-top: calc(env(safe-area-inset-top) + 78px);
+    padding-bottom: calc(env(safe-area-inset-bottom) + 48px);
+  }
+  .renov-copy-wrap {
+    min-height: 178px;
+  }
+  .renov-left:has(.renov-cta[aria-hidden='false']) .renov-copy-wrap {
+    bottom: 64px;
+  }
+  .renov-copy h1,
+  .renov-copy h2 {
+    font-size: clamp(36px, 4.8vw, 46px);
+  }
+  .renov-cta .button {
+    min-height: 44px;
   }
 }
 
@@ -243,5 +290,169 @@
   }
   .stage-card svg {
     margin-top: 4px;
+  }
+}
+
+/* Phones use the registered 3:4 scene as the complete Hero canvas. The copy
+   sits in a local lower gradient instead of continuing in a separate dark panel. */
+@media (max-width: 767px) {
+  .renov-hero {
+    height: 335svh;
+    min-height: 0;
+  }
+  .renov-sticky {
+    height: 100svh;
+    min-height: 0;
+  }
+  .renov-scene-stack,
+  .renov-tint {
+    inset: 0;
+    height: 100%;
+  }
+  .renov-image {
+    /* One consistent crop for all five registered stages prevents camera drift. */
+    object-fit: cover;
+    object-position: center 43%;
+  }
+  .renov-tint {
+    background:
+      linear-gradient(180deg, rgba(8, 10, 9, 0.28) 0%, rgba(8, 10, 9, 0.02) 26%, transparent 48%),
+      linear-gradient(
+        0deg,
+        rgba(8, 10, 9, 0.92) 0%,
+        rgba(8, 10, 9, 0.66) 31%,
+        rgba(8, 10, 9, 0.16) 54%,
+        transparent 72%
+      );
+  }
+  .renov-content {
+    height: 100%;
+    align-items: stretch;
+    padding-top: calc(env(safe-area-inset-top) + 72px);
+    padding-bottom: calc(env(safe-area-inset-bottom) + 56px);
+  }
+  .renov-left {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 430px;
+    height: 100%;
+  }
+  .renov-brand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+  .renov-copy-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: clamp(178px, 27svh, 238px);
+  }
+  .renov-left:has(.renov-cta[aria-hidden='false']) .renov-copy-wrap {
+    bottom: clamp(104px, 15svh, 132px);
+  }
+  .renov-copy h1,
+  .renov-copy h2 {
+    font-size: clamp(32px, 9vw, 42px);
+    line-height: 1.02;
+    margin-bottom: 10px;
+  }
+  .renov-copy p {
+    max-width: 360px;
+    font-size: 12px;
+    line-height: 1.45;
+  }
+  .renov-overline {
+    margin-bottom: 10px;
+  }
+  .renov-cta {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 7px;
+    width: 100%;
+    max-width: 330px;
+    min-height: 0;
+  }
+  .renov-cta[aria-hidden='false'] {
+    min-height: 91px;
+    transform: none !important;
+  }
+  .renov-cta .button {
+    min-height: 42px;
+  }
+  .renov-footer {
+    right: 0;
+    bottom: calc(env(safe-area-inset-bottom) + 14px);
+    left: 0;
+  }
+  .renov-hint {
+    max-width: 136px;
+  }
+}
+
+@media (max-width: 767px) and (max-height: 700px) {
+  .renov-content {
+    padding-top: calc(env(safe-area-inset-top) + 61px);
+    padding-bottom: calc(env(safe-area-inset-bottom) + 48px);
+  }
+  .renov-copy-wrap {
+    min-height: 152px;
+  }
+  .renov-left:has(.renov-cta[aria-hidden='false']) .renov-copy-wrap {
+    bottom: 94px;
+  }
+  .renov-copy h1,
+  .renov-copy h2 {
+    font-size: 29px;
+  }
+  .renov-copy p {
+    font-size: 11px;
+  }
+  .renov-cta {
+    flex-direction: row;
+    max-width: none;
+  }
+  .renov-cta[aria-hidden='false'] {
+    min-height: 40px;
+  }
+  .renov-cta .button {
+    flex: 1 1 0;
+    min-height: 40px;
+    padding-inline: 11px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px) and (max-height: 400px) {
+  .renov-brand {
+    display: none;
+  }
+  .renov-copy-wrap {
+    min-height: 110px;
+  }
+  .renov-left:has(.renov-cta[aria-hidden='false']) .renov-copy-wrap {
+    bottom: 88px;
+  }
+  .renov-overline {
+    margin-bottom: 4px;
+    font-size: 7px;
+  }
+  .renov-copy h1,
+  .renov-copy h2 {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 0.98;
+  }
+  .renov-copy p {
+    max-width: 330px;
+    font-size: 9px;
+    line-height: 1.25;
   }
 }

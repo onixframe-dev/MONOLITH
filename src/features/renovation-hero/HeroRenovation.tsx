@@ -2,9 +2,8 @@
 
 import { ArrowUpRight, ArrowDown } from 'lucide-react';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { OptimizedImage } from '@/components/shared/OptimizedImage';
 import { ButtonLink } from '@/components/ui/Button';
-import { renovationBlur } from '@/features/renovation-hero/data/blur';
+import { RenovationFrame } from '@/features/renovation-hero/RenovationFrame';
 import { renovationScenes, renovationTransitions } from '@/features/renovation-hero/data/scenes';
 
 const clamp = (value: number) => Math.max(0, Math.min(1, value));
@@ -152,7 +151,7 @@ export function HeroRenovation() {
               node.style.visibility = alpha < 0.01 ? 'hidden' : 'visible';
             });
 
-            if (sceneRef.current && window.innerWidth > 700) {
+            if (sceneRef.current && window.innerWidth >= 768) {
               // Camera motion applies to the full registered image stack, so the room cannot drift.
               sceneRef.current.style.transform = `scale(${1.025 + p * 0.027}) translate3d(0,${p * -0.35}%,0)`;
             }
@@ -228,18 +227,7 @@ export function HeroRenovation() {
               style={{ zIndex: index, opacity: index === 0 ? 1 : 0 }}
             >
               {preloaded.includes(index) ? (
-                <OptimizedImage
-                  src={scene.src}
-                  alt=""
-                  fill
-                  sizes="100vw"
-                  className="renov-image"
-                  priority={index === 0}
-                  loading="eager"
-                  fetchPriority={index === 0 ? 'high' : 'low'}
-                  blurDataUrl={renovationBlur[scene.src]}
-                  onLoad={() => ready(index)}
-                />
+                <RenovationFrame scene={scene} index={index} onReady={ready} />
               ) : (
                 <div className="renov-image-placeholder" />
               )}

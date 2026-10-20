@@ -33,6 +33,7 @@
 .renov-image,
 .renov-image-placeholder {
   object-fit: cover;
+  object-position: center;
   position: absolute;
   inset: 0;
   width: 100%;
@@ -262,7 +263,7 @@
   pointer-events: auto !important;
   transform: none !important;
 }
-@media (max-width: 960px) {
+@media (max-width: 1199px) {
   .renov-left {
     width: 100%;
     max-width: 770px;
@@ -280,7 +281,26 @@
       linear-gradient(0deg, rgba(8, 8, 8, 0.65), transparent 40%);
   }
 }
-@media (max-width: 700px) {
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* At the target tablet ratios cover trims only 6–13% of the side edges,
+     avoiding contain's visible top/bottom bands while retaining the room. */
+  .renov-image {
+    object-fit: cover;
+    object-position: center;
+  }
+  .renov-tint {
+    background:
+      linear-gradient(90deg, rgba(9, 10, 9, 0.8), rgba(9, 10, 9, 0.48) 53%, rgba(9, 10, 9, 0.12)),
+      linear-gradient(
+        0deg,
+        rgba(7, 8, 7, 0.72),
+        transparent 48%,
+        transparent 72%,
+        rgba(8, 9, 8, 0.22)
+      );
+  }
+}
+@media (max-width: 767px) {
   .renov-hero {
     height: 335svh;
     min-height: 1300px;
@@ -290,15 +310,19 @@
     min-height: 580px;
   }
   .renov-scene-stack {
-    inset: 0;
+    inset: 0 0 auto;
+    height: min(56.25vw, 29svh);
   }
+  /* The complete 16:9 room is more useful than a narrow portrait crop: the
+     viewer can read the kitchen, dining area, glazing and living zone together. */
   .renov-image {
-    object-position: 55% center;
+    object-fit: contain;
+    object-position: center;
   }
   .renov-content {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    align-items: flex-end;
+    padding-top: calc(min(56.25vw, 29svh) + 24px);
+    padding-bottom: 70px;
+    align-items: flex-start;
   }
   .renov-left {
     grid-template-rows: auto minmax(250px, auto) auto;
@@ -312,7 +336,7 @@
     margin-bottom: 14px;
   }
   .renov-copy-wrap {
-    min-height: clamp(250px, 34vh, 305px);
+    min-height: clamp(218px, 29svh, 270px);
   }
   .renov-copy h1,
   .renov-copy h2 {
@@ -330,6 +354,9 @@
     gap: 8px;
     max-width: 260px;
     width: 100%;
+    min-height: 0;
+  }
+  .renov-cta[aria-hidden='false'] {
     min-height: 100px;
   }
   .renov-cta .button {
@@ -355,9 +382,11 @@
     font-size: 9px;
   }
   .renov-tint {
+    inset: 0 0 auto;
+    height: min(56.25vw, 29svh);
     background:
-      linear-gradient(90deg, rgba(5, 7, 6, 0.54), rgba(5, 7, 6, 0.1)),
-      linear-gradient(0deg, rgba(5, 7, 6, 0.84), rgba(5, 7, 6, 0.24) 70%, rgba(5, 7, 6, 0.18));
+      linear-gradient(90deg, rgba(5, 7, 6, 0.34), rgba(5, 7, 6, 0.05)),
+      linear-gradient(0deg, #111311 0%, rgba(5, 7, 6, 0.12) 28%, rgba(5, 7, 6, 0.04) 100%);
   }
 }
 @media (max-width: 390px) {
@@ -375,11 +404,100 @@
     max-width: 170px;
   }
 }
+@media (max-width: 767px) and (max-height: 700px) {
+  .renov-content {
+    padding-top: calc(min(56.25vw, 29svh) + 15px);
+    padding-bottom: 56px;
+  }
+  .renov-copy-wrap {
+    min-height: 185px;
+  }
+  .renov-left {
+    grid-template-rows: auto 185px auto;
+  }
+  .renov-copy h1,
+  .renov-copy h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .renov-copy p {
+    font-size: 12px;
+  }
+  .renov-cta {
+    flex-direction: row;
+    max-width: none;
+    min-height: 0;
+  }
+  .renov-cta[aria-hidden='false'] {
+    min-height: 44px;
+    transform: translateY(-62px) !important;
+  }
+  .renov-cta .button {
+    flex: 1 1 0;
+    min-height: 40px;
+    padding: 0 11px;
+    font-size: 10px;
+  }
+  .renov-footer {
+    bottom: 14px;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .renov-scene-stack,
   .renov-frame,
   .renov-copy,
   .renov-cta {
     will-change: auto !important;
+  }
+}
+
+/* Tablet uses the complete registered room in a wide panel. Portrait crops
+   enlarged the windows and omitted the kitchen/living composition. */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .renov-scene-stack {
+    inset: 0 0 auto;
+    height: clamp(262px, 42svh, 360px);
+  }
+  .renov-image {
+    object-fit: cover;
+    object-position: center;
+  }
+  .renov-tint {
+    inset: 0 0 auto;
+    height: clamp(262px, 42svh, 360px);
+    background: linear-gradient(
+      0deg,
+      #111311 0%,
+      rgba(17, 19, 17, 0.12) 25%,
+      rgba(17, 19, 17, 0) 58%
+    );
+  }
+  .renov-content {
+    align-items: flex-start;
+    padding-top: calc(clamp(262px, 42svh, 360px) + 18px);
+    padding-bottom: 52px;
+  }
+  .renov-left {
+    grid-template-rows: auto minmax(220px, auto) auto;
+    max-width: 700px;
+    align-content: start;
+  }
+  .renov-brand {
+    margin-bottom: 14px;
+  }
+  .renov-copy-wrap {
+    min-height: clamp(220px, 31svh, 290px);
+  }
+  .renov-copy h1,
+  .renov-copy h2 {
+    font-size: clamp(40px, 5.8vw, 62px);
+    margin-bottom: 14px;
+  }
+  .renov-copy p {
+    font-size: 13px;
+    line-height: 1.52;
+  }
+  .renov-footer {
+    bottom: 18px;
   }
 }
